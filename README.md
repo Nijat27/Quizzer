@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Student names:
 * 1)	Kulaphong Jitareerat, 67761544
 * 2)	Nijiati Abulizi, 59764100
@@ -37,9 +36,3 @@ This is the front end of the app where users interact with the system and manage
 -	Times the quiz duration for each participant
 
 Overall, the package is a cohesive system for conducting quizzes efficiently, tracking performance, and managing quiz content.
-=======
-# Quizzer
-This application interacts with users to manage quizzes. 
-
-I will remove this > "test github"
->>>>>>> 53db837fa395b8471be549a73b74a0bf45288f9d
