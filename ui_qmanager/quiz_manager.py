@@ -12,7 +12,7 @@ class QuizManager:
 	def __init__(self):
 		pass
 
-	def get_all_pari_qname_file(self):
+	def get_all_pair_qname_file(self):
 
 		# Use os.path.join to create the full path
 		pattern = os.path.join(path_dbquizzes, '*.json')
@@ -31,5 +31,5 @@ class QuizManager:
 
 
 	def get_all_quiz_name(self):
-		list_quiz_name = list(self.get_all_pari_qname_file().keys())
+		list_quiz_name = list(self.get_all_pair_qname_file().keys())
 		return list_quiz_name
