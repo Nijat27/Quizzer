@@ -7,25 +7,25 @@ path_cur = os.getcwd()
 path_dbquizzes = os.path.join(path_cur, 'db_quizzes')
 # print(path_dbquizzes)
 
-class QuizParser:
+# class QuizParser:  # No need right now
 
-	def __init__(self):
-		# self.quizname = quizname  # name of .json file
-		pass 
+def get_json_files():
+	
+	pattern = os.path.join(path_dbquizzes, '*.json')
+	json_files = glob.glob(pattern)
+	# print(json_files)
 
-	def get_all_pair_qname_file(self):
+	return json_files
 
-		# Use os.path.join to create the full path
-		pattern = os.path.join(path_dbquizzes, '*.json')
-		# Use glob to get all files matching the pattern
-		json_files = glob.glob(pattern)
 
-		dict_pair_qname_file = {}
-		for json_file in json_files:
-			f = open(json_file)
-			data = json.load(f)
-			qname = data['quizname']
-			dict_pair_qname_file[qname] = json_file
-			f.close()
+def get_all_pair_qname_file():
+	json_files = get_json_files()
+	dict_pair_qname_file = {}
+	for json_file in json_files:
+		f = open(json_file)
+		data = json.load(f)
+		qname = data['quizname']
+		dict_pair_qname_file[qname] = json_file
+		f.close()
 
-		return dict_pair_qname_file
+	return dict_pair_qname_file

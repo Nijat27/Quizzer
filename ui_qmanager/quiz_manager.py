@@ -2,7 +2,7 @@ import os
 import glob
 import json
 
-from quizzes.quiz_parser import QuizParser
+from quizzes.quiz_parser import get_all_pair_qname_file
 
 path_cur = os.getcwd()
 # print(path_cur)
@@ -15,6 +15,5 @@ class QuizManager:
 		pass
 
 	def get_all_quiz_name(self):
-		qp = QuizParser()
-		list_quiz_name = list(qp.get_all_pair_qname_file().keys())
+		list_quiz_name = list(get_all_pair_qname_file().keys())
 		return list_quiz_name
