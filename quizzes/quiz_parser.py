@@ -46,7 +46,7 @@ def get_all_pair_qname_file():
 
 def create_quiz_obj(json_filename):
 	"""
-	Parse question data in the .json to question object
+	Parses question data in the .json to question object
 	and return list of the question objects.
 	
 	Parameters
