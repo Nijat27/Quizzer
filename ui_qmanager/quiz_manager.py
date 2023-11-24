@@ -15,5 +15,13 @@ class QuizManager:
 		pass
 
 	def get_all_quiz_name(self):
+		"""
+		Provide the list of all quiz names in the quiz database.
+
+		Returns
+		-------
+		list_quiz_name : list
+			the list of quiz names
+		"""
 		list_quiz_name = list(get_all_pair_qname_file().keys())
 		return list_quiz_name

@@ -10,7 +10,9 @@ path_dbquizzes = os.path.join(path_cur, 'db_quizzes')
 # class QuizParser:  # No need right now
 
 def get_json_files():
-	
+	"""
+	Get all .json files in the folder db_quizzes.
+	"""
 	pattern = os.path.join(path_dbquizzes, '*.json')
 	json_files = glob.glob(pattern)
 	# print(json_files)
@@ -19,6 +21,14 @@ def get_json_files():
 
 
 def get_all_pair_qname_file():
+	"""
+	Get all quiz names with file names from .json file
+
+	Returns
+	-------
+	dict_pair_qname_file : dict
+		the pairs of quiz name and file name.
+	"""
 	json_files = get_json_files()
 	dict_pair_qname_file = {}
 	for json_file in json_files:
@@ -29,3 +39,5 @@ def get_all_pair_qname_file():
 		f.close()
 
 	return dict_pair_qname_file
+
+
