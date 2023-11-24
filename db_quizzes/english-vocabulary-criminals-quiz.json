@@ -4,7 +4,7 @@
     "category": "English",
     "questions": [
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "A criminal is a person who has _______ the law.",
             "answer": "broken",
@@ -15,7 +15,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Criminals can also be called law breakers or _______ . ",
             "answer": "offenders",
@@ -26,7 +26,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "What can we call someone who steals?",
             "answer": "a thief",
@@ -37,7 +37,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Tommy can bump into someone and take their wallet without their knowing. What is he?",
             "answer": "a pickpocket",
@@ -48,7 +48,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Betsy had no money to buy food for her kids, so she took it from a supermarket without paying. What was her crime?",
             "answer": "shoplifting",
@@ -59,7 +59,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "What do we call someone who sells illegal drugs?",
             "answer": "a drug dealer",
@@ -70,7 +70,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "What kind of criminal is a businessman who imports goods without paying tax?",
             "answer": "a smuggler",
@@ -81,7 +81,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "In 2001, Saudi Arabian terrorists led an attack on the USA in which passenger airlines were _______ and crashed into buildings. ",
             "answer": "hijacked",
@@ -92,7 +92,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Jack breaks into rich people's homes and steals money and jewellery. He's an expert at",
             "answer": "burglary",
@@ -103,7 +103,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "A professional killer who's paid to murder people for political reasons is called",
             "answer": "an assassin",

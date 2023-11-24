@@ -4,7 +4,7 @@
     "category": "English",
     "questions": [
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Liverpool has quite a few South American players, including three from",
             "answer": "Brazil",
@@ -15,7 +15,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Carlsberg is a _______ beer, isn't it? ",
             "answer": "Danish",
@@ -26,7 +26,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "A person from Nigeria is a ",
             "answer": "Nigerian",
@@ -37,7 +37,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Frankie loves French wine and _______ cheese.\n\n Swiss\n Switz\n Suisse\n\na) Swiss b) Switz c) Suisse\n5. Yasmin is an Iranian, and her friend Sara is an\n\n Iraq\n Iraqi\n Iraqian\n\na) Iraq b) Iraqi c) Iraqian\n6. Mr Erdo\u011fan's a _______ , isn't he? \n\n Turk\n Turkey\n Turkish\n\na) Turk b) Turkey c) Turkish\n7. Musicians like Bj\u00f6rk and Sigur R\u00f3s are among the most famous _______ in the world right now.\n\n Icelandics\n Icelanders\n Icelandians\n\na) Icelandics b) Icelanders c) Icelandians\n8. In 1973 the USA helped _______ military dictator Augusto Pinochet stage the coup that ended democracy in Chile. \n\n Chile\n Chilean\n Chilenian\n\na) Chile b) Chilean c) Chilenian\n9. Marie Curie was a _______ chemist who discovered the element Polonium and named it after her country.\n\n Pole\n Polar\n Polish\n\na) Pole b) Polar c) Polish\n10. In 2018, the _______ model, singer and artist Catriona Gray won the Miss Universe crown for the Philippines.\n\n Philippino-Australian\n Filipinan-Australian\n Filipino-Australian\n\na) Philippino-Australian b) Filipinan-Australian c) Filipino-Australian\n\n\nYour score is: \nCorrect answers:\n\n\n\n",
             "answer": "Swiss",
@@ -48,7 +48,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Yasmin is an Iranian, and her friend Sara is an",
             "answer": "Iraqi",
@@ -59,7 +59,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Mr Erdo\u011fan's a _______ , isn't he? ",
             "answer": "Turk",
@@ -70,7 +70,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Musicians like Bj\u00f6rk and Sigur R\u00f3s are among the most famous _______ in the world right now.",
             "answer": "Icelanders",
@@ -81,7 +81,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "In 1973 the USA helped _______ military dictator Augusto Pinochet stage the coup that ended democracy in Chile. ",
             "answer": "Chilean",
@@ -92,7 +92,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Marie Curie was a _______ chemist who discovered the element Polonium and named it after her country.",
             "answer": "Polish",
@@ -103,7 +103,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "In 2018, the _______ model, singer and artist Catriona Gray won the Miss Universe crown for the Philippines.",
             "answer": "Filipino-Australian",

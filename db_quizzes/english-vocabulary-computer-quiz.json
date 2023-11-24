@@ -4,7 +4,7 @@
     "category": "English",
     "questions": [
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "A computer program is a piece of",
             "answer": "software",
@@ -15,7 +15,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Devices that are connected to computers, such as printers, scanners and modems, are called",
             "answer": "peripherals",
@@ -26,7 +26,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "What do we call a specific computer record containing data or a small program?",
             "answer": "a file",
@@ -37,7 +37,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "What do we call the part of a computer that stores programs and information?",
             "answer": "the hard disk",
@@ -48,7 +48,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "What do we call a program for exploring the Web and viewing websites?",
             "answer": "a browser",
@@ -59,7 +59,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "To open a particular folder, file or app, you just have to click on its",
             "answer": "icon",
@@ -70,7 +70,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "RAM, ROM and cache are different types of _______ that computers can use.",
             "answer": "memory",
@@ -81,7 +81,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Which allows wireless data communication?",
             "answer": "a Bluetooth connection",
@@ -92,7 +92,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "What do people go to public hotspots for?",
             "answer": "Internet access",
@@ -103,7 +103,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "A computer's _______ is called its heart or \"brains\" because it's where data is processed.",
             "answer": "CPU",

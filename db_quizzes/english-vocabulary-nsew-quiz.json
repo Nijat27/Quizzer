@@ -4,7 +4,7 @@
     "category": "English",
     "questions": [
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "The Earth rotates on a ________ axis.",
             "answer": "north-south",
@@ -15,7 +15,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Southern elephant seals live ________ here.",
             "answer": "south of",
@@ -26,7 +26,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "\"We live on the south-east coast.\" In this sentence south-east is",
             "answer": "an adjective",
@@ -37,7 +37,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "North, south, east and west are often referred to as the ________ points of the compass.",
             "answer": "cardinal",
@@ -48,7 +48,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "The direction north-east is ________ point of the compass.",
             "answer": "an intercardinal",
@@ -59,7 +59,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Europe is ________ of Africa.",
             "answer": "north",
@@ -70,7 +70,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "The grocery store faces ________ and gets a lot of sunlight.",
             "answer": "south-east",
@@ -81,7 +81,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "The weather report says the wind was ________ all night.",
             "answer": "coming from the east",
@@ -92,7 +92,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "The sun rises in the _____ and moves across the sky.",
             "answer": "east",
@@ -103,7 +103,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Moscow is ________ of Russia.",
             "answer": "in the west",

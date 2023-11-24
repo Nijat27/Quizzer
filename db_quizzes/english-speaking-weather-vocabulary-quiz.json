@@ -4,7 +4,7 @@
     "category": "English",
     "questions": [
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "The rain's nearly stopped. It's only _______ now.",
             "answer": "drizzling",
@@ -15,7 +15,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "A _______ is a tropical storm with very strong winds.",
             "answer": "hurricane",
@@ -26,7 +26,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "I stepped in a _______ and got the bottom of my pants all wet.",
             "answer": "puddle",
@@ -37,7 +37,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "We didn't use the airconditioner at all during that _______ last summer.",
             "answer": "cold spell",
@@ -48,7 +48,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "You can get struck by _______ during an electrical storm.",
             "answer": "lightning",
@@ -59,7 +59,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "It was too _______ for the pilot to land the plane.",
             "answer": "foggy",
@@ -70,7 +70,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "If you let me put your _______ on I'll be able to see better.",
             "answer": "shades",
@@ -81,7 +81,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "There's often a light _______ in the afternoon on this island.",
             "answer": "shower",
@@ -92,7 +92,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "When I looked at the _______ it said it was ten degrees.",
             "answer": "thermometer",
@@ -103,7 +103,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Putting on _______ is supposed to prevent sunburn.",
             "answer": "sunscreen",

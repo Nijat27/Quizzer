@@ -4,7 +4,7 @@
     "category": "English",
     "questions": [
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "He arrived at exactly 11am, _____ on time.",
             "answer": "right",
@@ -14,7 +14,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "What do you do in your _____ time?",
             "answer": "free",
@@ -24,7 +24,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "We couldn't finish because we ________ time.",
             "answer": "ran out of",
@@ -34,7 +34,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "If we take this short cut we'll _____ some time.",
             "answer": "save",
@@ -44,7 +44,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "We _____ time sitting in a traffic jam. We should've taken the train.",
             "answer": "wasted",
@@ -54,7 +54,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "There have been several robberies in the _____ weeks.",
             "answer": "past few",
@@ -64,7 +64,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "The Internet was developed in the _____ century.",
             "answer": "late 20th",
@@ -74,7 +74,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "They're really busy. They work ________ dusk.",
             "answer": "from dawn to",
@@ -84,7 +84,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "You'll forget all about it ________ by.",
             "answer": "as time goes",
@@ -94,7 +94,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Can you ________ to meet us this week?",
             "answer": "make time",
