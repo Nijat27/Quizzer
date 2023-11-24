@@ -16,7 +16,7 @@ class QuizManager:
 
 	def get_all_quiz_name(self):
 		"""
-		Provide the list of all quiz names in the quiz database.
+		Provides the list of all quiz names in the quiz database.
 
 		Returns
 		-------
