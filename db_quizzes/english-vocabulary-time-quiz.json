@@ -4,7 +4,7 @@
     "category": "English",
     "questions": [
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Which is the equivalent of one millennium?",
             "answer": "1000 years",
@@ -15,7 +15,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Night-time is the time from",
             "answer": "dusk to dawn",
@@ -26,7 +26,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "How many hours are there between midnight and noon?\n\n six\n twelve\n twenty-four\n\na) six b) twelve c) twenty-four\n4. How many minutes are there in an hour and a half? \n\n 90\n 75\n 60.5\n\na) 90 b) 75 c) 60.5\n5. How many weekdays are there in one week?\n\n five\n six\n seven\n\na) five b) six c) seven\n6. \"My train leaves at 2pm.\" What does pm stand for?\n\n past-meridiem\n post-meridiem\n post-midday\n\na) past-meridiem b) post-meridiem c) post-midday\n7. Which format is being used when a date is written as March 28th, 2019?\n\n American\n British\n Informal\n\na) American b) British c) Informal\n8. Which is another way of saying six forty-five when telling the time?\n\n forty-five past six\n fifteen to seven\n a quarter to seven\n\na) forty-five past six b) fifteen to seven c) a quarter to seven\n9. In British English, which comes first when writing the date?\n\n the day\n the month\n the year\n\na) the day b) the month c) the year\n10. \"Genghis Khan died in 1227 AD.\" This means he died 1227 years\n\n before now\n before Christ\n after Christ was born\n\na) before now b) before Christ c) after Christ was born\n\n\nYour score is: \nCorrect answers:\n\n\n\n",
             "answer": "twelve",
@@ -37,7 +37,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "How many minutes are there in an hour and a half? ",
             "answer": "90",
@@ -48,7 +48,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "How many weekdays are there in one week?",
             "answer": "five",
@@ -59,7 +59,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "\"My train leaves at 2pm.\" What does pm stand for?",
             "answer": "post-meridiem",
@@ -70,7 +70,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Which format is being used when a date is written as March 28th, 2019?",
             "answer": "American",
@@ -81,7 +81,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Which is another way of saying six forty-five when telling the time?",
             "answer": "a quarter to seven",
@@ -92,7 +92,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "In British English, which comes first when writing the date?",
             "answer": "the day",
@@ -103,7 +103,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "\"Genghis Khan died in 1227 AD.\" This means he died 1227 years",
             "answer": "after Christ was born",

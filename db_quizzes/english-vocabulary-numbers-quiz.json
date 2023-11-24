@@ -4,7 +4,7 @@
     "category": "English",
     "questions": [
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Which is an ordinal number?",
             "answer": "third",
@@ -15,7 +15,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Which is a cardinal number?",
             "answer": "three",
@@ -26,7 +26,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Which is a decimal number?\n\n three\n third\n point three\n\na) three b) third c) point three\n4. Which uses a fraction to express a period of time? \n\n 1.5 hours\n ninety minutes\n an hour and a half\n\na) 1.5 hours b) ninety minutes c) an hour and a half\n5. How is the number 4.55 pronounced?\n\n four fifty-five\n four point fifty-five\n four point five five\n\na) four fifty-five b) four point fifty-five c) four point five five\n6. In spoken English, 6 \u00f7 2 = 3 is expressed as \"six _______ two equals three\".\n\n divide\n divided\n divided by\n\na) divide b) divided c) divided by\n7. What does twenty times five equal?\n\n one hundred\n twenty-five\n fifteen\n\na) one hundred b) twenty-five c) fifteen\n8. Complete with the correct word: Two plus two _______ four.\n\n equalizes\n equals\n equal\n\na) equalizes b) equals c) equal\n9. Complete with the correct word or words: 12 ___ 3 = 9.\n\n minus by\n minus\n subtracted from\n\na) minus by b) minus c) subtracted from\n10. Which number is written as XIX in Roman numerals?\n\n nine\n eleven\n nineteen\n\na) nine b) eleven c) nineteen\n\n\nYour score is: \nCorrect answers:\n\n\n\n",
             "answer": "point three",
@@ -37,7 +37,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Which uses a fraction to express a period of time? ",
             "answer": "an hour and a half",
@@ -48,7 +48,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "How is the number 4.55 pronounced?",
             "answer": "four point five five",
@@ -59,7 +59,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "In spoken English, 6 \u00f7 2 = 3 is expressed as \"six _______ two equals three\".",
             "answer": "divided by",
@@ -70,7 +70,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "What does twenty times five equal?",
             "answer": "one hundred",
@@ -81,7 +81,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Complete with the correct word: Two plus two _______ four.",
             "answer": "equals",
@@ -92,7 +92,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Complete with the correct word or words: 12 ___ 3 = 9.",
             "answer": "minus",
@@ -103,7 +103,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Which number is written as XIX in Roman numerals?",
             "answer": "nineteen",

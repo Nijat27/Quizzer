@@ -4,7 +4,7 @@
     "category": "English",
     "questions": [
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "My mother's daughter is my",
             "answer": "sister",
@@ -15,7 +15,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "My mother's mother is my",
             "answer": "grandmother",
@@ -26,7 +26,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "My father's son is my",
             "answer": "brother",
@@ -37,7 +37,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "My step-mother's son is my",
             "answer": "step-brother",
@@ -48,7 +48,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "My brother's daughter is my",
             "answer": "niece",
@@ -59,7 +59,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "My aunt's children are my",
             "answer": "cousins",
@@ -70,7 +70,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "My grandpa's father is my",
             "answer": "great grandpa",
@@ -81,7 +81,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "My dad's brother is my",
             "answer": "uncle",
@@ -92,7 +92,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "My sister's husband is my",
             "answer": "brother-in-law",
@@ -103,7 +103,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "My female spouse is my",
             "answer": "wife",

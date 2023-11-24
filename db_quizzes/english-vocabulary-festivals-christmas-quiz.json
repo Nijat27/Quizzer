@@ -4,7 +4,7 @@
     "category": "English",
     "questions": [
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Christmas is a religious festival that celebrates the _______ of Jesus Christ.",
             "answer": "birth",
@@ -15,7 +15,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Christmas Eve is on",
             "answer": "December 24",
@@ -26,7 +26,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Christians believe Jesus was born in Bethlehem, a small town in\n\n Southern Europe\n Northern Africa\n the Middle East\n\na) Southern Europe b) Northern Africa c) the Middle East\n4. Which is found in most Christian homes during the Christmas holidays?\n\n a bearded man in a red suit\n a tree decorated with tinsel\n a small herd of reindeer\n\na) a bearded man in a red suit b) a tree decorated with tinsel c) a small herd of reindeer\n5. Many children think that _______ brings their Christmas presents.\n\n Father Christmas\n an angel\n a Christmas ghost\n\na) Father Christmas b) an angel c) a Christmas ghost\n6. How many gifts did the wise men from the East bring for Jesus?\n\n one\n three\n twelve\n\na) one b) three c) twelve\n7. Which is traditionally eaten at Christmas?\n\n tinsel\n mistletoe\n turkey\n\na) tinsel b) mistletoe c) turkey\n8. Father Christmas is also known as\n\n Santa Christmas\n Santa Claus\n Father Claus\n\na) Santa Christmas b) Santa Claus c) Father Claus\n9. Old songs and hymns written especially for Christmas are called\n\n Christmas carols\n Santa songs\n holiday hits\n\na) Christmas carols b) Santa songs c) holiday hits\n10. Which is a common abbreviation of \"Christmas\"?\n\n Cmas\n Ex-mas \n Xmas\n\na) Cmas b) Ex-mas c) Xmas\n\n\nYour score is: \nCorrect answers:\n\n\n\n",
             "answer": "the Middle East",
@@ -37,7 +37,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Which is found in most Christian homes during the Christmas holidays?",
             "answer": "a tree decorated with tinsel",
@@ -48,7 +48,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Many children think that _______ brings their Christmas presents.",
             "answer": "Father Christmas",
@@ -59,7 +59,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "How many gifts did the wise men from the East bring for Jesus?",
             "answer": "three",
@@ -70,7 +70,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Which is traditionally eaten at Christmas?",
             "answer": "turkey",
@@ -81,7 +81,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Father Christmas is also known as",
             "answer": "Santa Claus",
@@ -92,7 +92,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Old songs and hymns written especially for Christmas are called",
             "answer": "Christmas carols",
@@ -103,7 +103,7 @@
             }
         },
         {
-            "type": "tf",
+            "type": "mc",
             "points": "1",
             "text": "Which is a common abbreviation of \"Christmas\"?",
             "answer": "Xmas",
