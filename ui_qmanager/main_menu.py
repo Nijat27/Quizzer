@@ -57,3 +57,11 @@ class QuizApp:
     def take_quiz(self):
         try:
             quiz_number = int(input("Enter the quiz number: "))
+            print(f"You have selected quiz {quiz_number}")
+            # Add logic to start the quiz
+        except ValueError:
+            self.display_error_message()
+
+if __name__ == "__main__":
+    quiz_app = QuizApp()
+    quiz_app.run()
