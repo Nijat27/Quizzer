@@ -45,6 +45,11 @@ class Quiz:
 	def cal_score(self):
 		"""
 		Calculates score of the quiz session.
+		
+		Returns
+		-------
+		self.quiz_score : float
+			the summation scores of all questions(including the extra scores).
 
 		######################################################
 		# I have done the main function but

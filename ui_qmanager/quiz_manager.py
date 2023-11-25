@@ -31,6 +31,18 @@ class QuizManager:
 
 
 	def run_quiz(self, json_filename='db_quizzes/english-speaking-small-talk_quiz.json'):
+		"""
+		Run the quiz after know a use give the quiz name
+
+		Parameters
+		----------
+		json_filename : str
+			the location of the quiz file in the db_quizzes.
+			it should be "db_quizzes/<quiz_file>.json"
+			using get_all_pair_qname_file function to get the 
+			pairs of quizname and location of the quiz file .json
+		"""
+
 		quiz_obj = Quiz(json_filename)
 
 		# set start time
