@@ -51,14 +51,32 @@ class QuestionTF(Question):
         super().__init__()
 
     def ask(self):
+        print(f"(T)rue or (F)alse: {self.text}")
+
         while True:
-            print(f"(T)rue or (F)alse: {self.text}")
             response = input("? ")
-            if len(response) == 0 or response[0].lower() not in ["t", "f"]:
-                print("Sorry, that's not a valid response. Please try again.")
+
+            # check response
+            ## no response
+            if len(response) == 0:
+                print("Sorry, that's not a valid response.")
+                print("Please try again.")
+                continue
+
+            if response[0].lower() not in ["t", "f"]:
+                print('Sorry, The valid response should be "t/T" or "f/F"')
+                print("Please try again.")
+                continue
+
+            # convert response to the answer text (True/False)
+            if response[0].lower()=='t':
+                response_txt = "True"
             else:
-                self.is_correct = response[0].lower() == self.correct_answer
-                break
+                response_txt = "False"
+
+            # check reponse
+            self.is_correct = response_txt == self.correct_answer
+            break
 
 class QuestionMC(Question):
     def __init__(self):
@@ -71,6 +89,9 @@ class QuestionMC(Question):
         for a in self.answers:
             print(f"{a.name}) {a.text}")
         
+        # number of choices
+        no_choices = len(self.answers)
+
         # get response
         while True:
             response = input("? ")
@@ -80,28 +101,28 @@ class QuestionMC(Question):
             try:
                 response_int = int(response)
             except:
-                print("Sorry, that's not a valid response. Please input the number of choice.")
+                print(f"Sorry, that's not a valid response. The response should be a number between 1 to {no_choices}.")
                 print("Please try again.")
                 continue
 
             ## range answer number
-            no_choices = len(self.answers)
             if (response_int > no_choices)|(response_int<1):
-               print(f"Sorry, that's not a valid response. The input should be the number between 0 to {no_choices}")
-               print("Please try again.")
-               continue 
+                print(f"Sorry, that's not a valid response. The response should be a number between 1 to {no_choices}.")
+                print("Please try again.")
+                continue 
 
             ## no reponse
             if not response:
                 print("Sorry, that's not a valid response.")
                 print("Please try again.")
-            else:
-                # get text of answer from answer number
-                response_text = self.answers[response_int-1].text
-                # print('response_text', response_text)
-                # print('self.correct_answer', self.correct_answer)
-                self.is_correct = response_text.lower() == self.correct_answer
-                break
+                continue
+
+            # get text of answer from answer number
+            response_text = self.answers[response_int-1].text
+            # print('response_text', response_text)
+            # print('self.correct_answer', self.correct_answer)
+            self.is_correct = response_text.lower() == self.correct_answer
+            break
 
 
 class Answer:

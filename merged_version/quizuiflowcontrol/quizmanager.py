@@ -20,7 +20,7 @@ class QuizManager:
         pattern = os.path.join(self.quizfolder, '*.json')
         json_files = glob.glob(pattern)
 
-        for i, f in enumerate(json_files[:2]):
+        for i, f in enumerate(json_files):
             parser = JSONQuizParser()
             self.quizzes[i + 1] = parser.parse_quiz(f)
             # if f.is_file():
