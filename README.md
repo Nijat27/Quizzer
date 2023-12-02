@@ -30,7 +30,7 @@ This is the front end of the app where users interact with the system and manage
 -	Parses quizzes
 
 File: quizparser.py  
-```class JSONQuizParser```: is used for importing quiz data from JSON file.  
+```class JSONQuizParser```: is used for importing quiz data from JSON file.   
 Functions:   
 1. import_data(quizpath)  
 	The function takes the JSON file path and then opens/loads the data into a dictionary, which is the output of the function.
@@ -46,7 +46,7 @@ Functions:
 -	Times the quiz duration for each participant
 
 File: quiz.py  
-```class Quiz```: contains all information for the quiz session, including questions, answers, and points.
+```class Quiz```: contains all information for the quiz session, including questions, answers, and points.  
 Functions:  
 1. print_header(idx)  
 	The function takes ```idx```, which is the number of the question, and prints the header of each question.
