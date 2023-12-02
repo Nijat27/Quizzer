@@ -1,0 +1,109 @@
+******************************************** 
+
+RESULTS for Tok
+Date: 2023-12-02 15:10:31.854965
+QUESTIONS: 7 out of 10 correct
+SCORE: 7.00 points of possible 10.00
+SCORE EXTRA: 4.39 points
+TOTAL SCORE: 11.39 points
+******************************************** 
+
+
+
+************** Result Details ************** 
+
+Question: He arrived at exactly 11am, _____ on time.
+Correct Answer: right
+Your Answer: 	right
+Time Spending: 	8.50 seconds
+Score: 		1.00 points
+Extra Score: 	0.00 points
+Total Score: 	1.00 points
+-------------------------------------------- 
+
+Question: What do you do in your _____ time?
+Correct Answer: free
+Your Answer: 	free
+Time Spending: 	3.70 seconds
+Score: 		1.00 points
+Extra Score: 	1.35 points
+Total Score: 	2.35 points
+-------------------------------------------- 
+
+Question: We couldn't finish because we ________ time.
+Correct Answer: ran out of
+Your Answer: 	ran out of
+Time Spending: 	4.24 seconds
+Score: 		1.00 points
+Extra Score: 	1.18 points
+Total Score: 	2.18 points
+-------------------------------------------- 
+
+Question: If we take this short cut we'll _____ some time.
+Correct Answer: save
+Your Answer: 	save
+Time Spending: 	6.64 seconds
+Score: 		1.00 points
+Extra Score: 	0.00 points
+Total Score: 	1.00 points
+-------------------------------------------- 
+
+Question: We _____ time sitting in a traffic jam. We should've taken the train.
+Correct Answer: wasted
+Your Answer: 	wasted
+Time Spending: 	2.69 seconds
+Score: 		1.00 points
+Extra Score: 	1.86 points
+Total Score: 	2.86 points
+-------------------------------------------- 
+
+Question: There have been several robberies in the _____ weeks.
+Correct Answer: past few
+Your Answer: 	past few
+Time Spending: 	7.12 seconds
+Score: 		1.00 points
+Extra Score: 	0.00 points
+Total Score: 	1.00 points
+-------------------------------------------- 
+
+Question: The Internet was developed in the _____ century.
+Correct Answer: late 20th
+Your Answer: 	late 20th
+Time Spending: 	5.51 seconds
+Score: 		1.00 points
+Extra Score: 	0.00 points
+Total Score: 	1.00 points
+-------------------------------------------- 
+
+Question: They're really busy. They work ________ dusk.
+Correct Answer: from dawn to
+Your Answer: 	from day to
+Time Spending: 	5.92 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: You'll forget all about it ________ by.
+Correct Answer: as time goes
+Your Answer: 	when time comes
+Time Spending: 	4.05 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: Can you ________ to meet us this week?
+Correct Answer: make time
+Your Answer: 	do time
+Time Spending: 	5.85 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+SCORE: 	7.00 points of possible 10.00
+SCORE EXTRA: 	4.39 points
+TOTAL SCORE: 	11.39 points
+******************************************** 
+

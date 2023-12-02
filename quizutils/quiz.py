@@ -3,17 +3,61 @@ import sys
 import time
 
 class Quiz:
+    """
+    The Quiz object contains all information for quiz session, including
+    questions, answers, and points.
+            
+    Attributes
+    ----------
+    name : str
+        the quiz name
+    description : str
+        the quiz description
+    questions : list
+        the list of the question objects
+    total_points : numeric
+        the number of total score (only question's score)
+    quiz_score : numeric
+        the number of the quiz score (sum of the correct answer for question's score)
+    correct_count : numeric
+        the number of the correct answer
+    quiz_score_ext : numeric
+        the number of the quiz extra score (score based on time spending)
+    quiz_score_final : numeric
+        the number of the quiz score and extra score (sum of extra and question's score)
+    time_start : datetime
+        time when a user starts a quiz
+    list_time_at_response : list
+        the list of time usage for each question
+    list_response : list
+        the list of the user's answers
+    list_qanswer : list
+        the list of the correct answers (solution)
+    list_qpoint : list
+        the list of the question points
+    list_score : list
+        the list of the scores for each question (question's score)
+    list_score_ext : list
+        the list of the extra scores for each question
+    list_score_final : list
+        the lost of the summation scores (both extra and question's score)
+    list_time_used : list
+        the list of time usage for each question
+    """
+
     def __init__(self):
+        # quiz information from JSON file
         self.name = ""
         self.description = ""
         self.questions = []
         self.total_points = 0
         self.quiz_score = 0
         self.correct_count = 0
-        
+
+        # for logging score during the quiz session
         self.quiz_score_ext = 0
         self.quiz_score_final = 0
-        self.time_start = None  # time when user start quiz
+        self.time_start = None
         self.list_time_at_response = []
         self.list_response = []
         self.list_qanswer = []
@@ -21,10 +65,13 @@ class Quiz:
         self.list_score = []
         self.list_score_ext = []
         self.list_score_final = []
-        self.list_time_used = []  # list of time used
+        self.list_time_used = []
 
 
     def print_header(self, idx):
+        """
+        Print the main information of the quiz session.
+        """
         print("\n\n", "*"*44)
         print(f"QUIZ NAME: {self.name}")
         print(f"DESCRIPTION: {self.description}")
@@ -34,6 +81,10 @@ class Quiz:
 
 
     def print_results(self, quiztaker, thefile=sys.stdout):
+        """
+        Print the result information of the quiz session.
+        """
+        # overall results
         print("*"*44, "\n", file=thefile)
         print(f"RESULTS for {quiztaker}", file=thefile)
         print(f"Date: {datetime.datetime.today()}", file=thefile)
@@ -43,9 +94,11 @@ class Quiz:
         print(f"TOTAL SCORE: {self.quiz_score_final:.02f} points", file=thefile)
         print("*"*44, "\n", file=thefile)
 
-        # more details
+        # detail results
         print("\n", file=thefile)
         print("*"*14,"Result Details", "*"*14, "\n", file=thefile)
+
+        ## detail for each question
         for idx, q in enumerate(self.questions):
             print(f"Question: {q.text}", file=thefile)
             print(f"Correct Answer: {q.correct_answer}", file=thefile)
@@ -55,6 +108,7 @@ class Quiz:
             print(f"Extra Score: \t{self.list_score_ext[idx]:.02f} points", file=thefile)
             print(f"Total Score: \t{self.list_score_final[idx]:.02f} points", file=thefile)
             print("-"*44, "\n", file=thefile)
+
         print(f"SCORE: \t{self.quiz_score:.02f} points of possible {self.total_points:.02f}", file=thefile)
         print(f"SCORE EXTRA: \t{self.quiz_score_ext:.02f} points", file=thefile)
         print(f"TOTAL SCORE: \t{self.quiz_score_final:.02f} points", file=thefile)
@@ -62,6 +116,16 @@ class Quiz:
 
 
     def take_quiz(self):
+        """
+        Run the quiz session. This provides the information of each question
+        to the user and get the answer from them.
+
+        Returns
+        -------
+        (self.quiz_score, self.correct_count, self.total_points) : tuple
+            the tuple that contains the quiz score (question's score), 
+            the number of correct answers, and the possible points.
+        """
         self.score = 0
         self.correct_count = 0
         self.time_start = time.time()
@@ -69,40 +133,34 @@ class Quiz:
         for idx, q in enumerate(self.questions):
             q.is_correct = False
             self.print_header(idx)
-            q.ask()
+            q.ask()  # waiting for users' answer
 
+            # count number of correct answers
             if q.is_correct:
                 self.correct_count += 1
-                # self.score += q.points
 
             print("------------------------------------------------\n")
+
         self.cal_score()
+
         return (self.quiz_score, self.correct_count, self.total_points)
 
 
     def cal_score(self):
         """
-        Calculates score of the quiz session.
-        
-        Returns
-        -------
-        self.quiz_score : float
-            the summation scores of all questions(including the extra scores).
-
-        ######################################################
-        # I have done the main function but
-        # This function need to add exception/check answer !!!
-        ######################################################
+        Calculate score of the quiz session. This function calculates the question's score
+        and extra score related to the user's time spending of each question.
         """
 
-        # get time at each answering
+        # get data for calculating score
+        ## get time, user's answers, question's points, and question's answer of each question
         for q_obj in self.questions:
-            self.list_time_at_response.append(q_obj.log_time_at_res)
-            self.list_response.append(q_obj.log_response)
-            self.list_qanswer.append(q_obj.correct_answer)  ## get corrected answers
-            self.list_qpoint.append(q_obj.points)  ## get question points
+            self.list_time_at_response.append(q_obj.log_time_at_res)  # user's time stamp
+            self.list_response.append(q_obj.log_response)  # user's answer
+            self.list_qanswer.append(q_obj.correct_answer)  # question's answer
+            self.list_qpoint.append(q_obj.points)  # get question's point
 
-        # get time spending for each question in second unit
+        ## get time spending for each question in second unit
         for idx, _ in enumerate(self.list_time_at_response):
             if idx==0:
                 time_used = self.list_time_at_response[idx] - self.time_start
@@ -130,9 +188,10 @@ class Quiz:
             else:
                 self.list_score_ext.append(0)
 
-        ## combine normal and extra scores
+        ## combine question's scores and extra scores
         list_score_ext_correct = []
         for idx, q_score in enumerate(self.list_score):
+            # user will get extra scores if their answer is correct.
             if q_score>0:
                 score_cb = q_score + self.list_score_ext[idx]
                 list_score_ext_correct.append(self.list_score_ext[idx])
@@ -149,23 +208,38 @@ class Quiz:
 
 
 class Question:
+    """
+    The Question object that stores all the question information for running the quiz session.
+    """
+
     def __init__(self):
         self.points = 0
         self.correct_answer = ""
         self.text = ""
         self.is_correct = False
-
-        self.log_response = None
+        self.log_response = None  # list of user's answers
         self.log_time_at_res = None  # list of time spending
 
 
 class QuestionTF(Question):
+    """
+    The QuesionTF object (inherits from the Question object) 
+    that stores the True or False question type. This object is used when 
+    the program is waiting for the user's answer.
+    """
+
     def __init__(self):
         super().__init__()
 
+    # get the user's answer
     def ask(self):
+        """
+        Provide question information to the users and get reponse from them.
+        """
+        # print question text with T or F choices
         print(f"(T)rue or (F)alse: {self.text}")
 
+        # get response
         while True:
             response = input("? ")
 
@@ -176,6 +250,7 @@ class QuestionTF(Question):
                 print("Please try again.")
                 continue
 
+            ## reponse must be t or f (accept upper and lower cases)
             if response[0].lower() not in ["t", "f"]:
                 print('Sorry, The valid response should be "t/T" or "f/F"')
                 print("Please try again.")
@@ -198,10 +273,17 @@ class QuestionTF(Question):
 
 
 class QuestionMC(Question):
+    """
+    The QuestionMC object (inherits from the Question object) 
+    that stores the Multiple Choice question type. 
+    This object is used when the program is waiting for the user's answer.  
+    """
+
     def __init__(self):
         super().__init__()
         self.answers = []
 
+    # get the user's answer
     def ask(self):
         # print question and choices
         print(self.text)
@@ -238,8 +320,6 @@ class QuestionMC(Question):
 
             # get text of answer from answer number
             response_txt = self.answers[response_int-1].text
-            # print('response_text', response_text)
-            # print('self.correct_answer', self.correct_answer)
             self.is_correct = response_txt == self.correct_answer
 
             # log response
@@ -249,6 +329,9 @@ class QuestionMC(Question):
 
 
 class Answer:
+    """
+    The Answer object that stores the answers of each question. 
+    """
     def __init__(self):
         self.text = ""
         self.name = ""
