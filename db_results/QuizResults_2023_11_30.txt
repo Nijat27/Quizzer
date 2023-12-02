@@ -1,109 +1,109 @@
 ******************************************** 
 
-RESULTS for Yok
-Date: 2023-11-30 09:11:08.176272
-QUESTIONS: 2 out of 10 correct
-SCORE: 2.00 points of possible 10.00
-SCORE EXTRA: 10.00 points
-TOTAL SCORE: 12.00 points
+RESULTS for Nijat
+Date: 2023-11-30 09:22:38.672246
+QUESTIONS: 5 out of 10 correct
+SCORE: 5.00 points of possible 10.00
+SCORE EXTRA: 17.17 points
+TOTAL SCORE: 22.17 points
 ******************************************** 
 
 
 
 ************** Result Details ************** 
 
-Question: Which is the equivalent of one millennium?
-Correct Answer: 1000 years
-Your Answer: 	100 years
-Time Spending: 	0.56 seconds
+Question: A computer program is a piece of
+Correct Answer: software
+Your Answer: 	software
+Time Spending: 	10.67 seconds
+Score: 		1.00 points
+Extra Score: 	0.00 points
+Total Score: 	1.00 points
+-------------------------------------------- 
+
+Question: Devices that are connected to computers, such as printers, scanners and modems, are called
+Correct Answer: peripherals
+Your Answer: 	formats
+Time Spending: 	2.16 seconds
 Score: 		0.00 points
 Extra Score: 	0.00 points
 Total Score: 	0.00 points
 -------------------------------------------- 
 
-Question: Night-time is the time from
-Correct Answer: dusk to dawn
-Your Answer: 	midnight to dawn
-Time Spending: 	0.26 seconds
+Question: What do we call a specific computer record containing data or a small program?
+Correct Answer: a file
+Your Answer: 	an icon
+Time Spending: 	0.83 seconds
 Score: 		0.00 points
 Extra Score: 	0.00 points
 Total Score: 	0.00 points
 -------------------------------------------- 
 
-Question: How many hours are there between midnight and noon?
-Correct Answer: twelve
-Your Answer: 	six
-Time Spending: 	0.28 seconds
-Score: 		0.00 points
-Extra Score: 	0.00 points
-Total Score: 	0.00 points
--------------------------------------------- 
-
-Question: How many minutes are there in an hour and a half? 
-Correct Answer: 90
-Your Answer: 	75
-Time Spending: 	0.31 seconds
-Score: 		0.00 points
-Extra Score: 	0.00 points
-Total Score: 	0.00 points
--------------------------------------------- 
-
-Question: How many weekdays are there in one week?
-Correct Answer: five
-Your Answer: 	six
-Time Spending: 	0.33 seconds
-Score: 		0.00 points
-Extra Score: 	0.00 points
-Total Score: 	0.00 points
--------------------------------------------- 
-
-Question: "My train leaves at 2pm." What does pm stand for?
-Correct Answer: post-meridiem
-Your Answer: 	post-meridiem
-Time Spending: 	0.33 seconds
+Question: What do we call the part of a computer that stores programs and information?
+Correct Answer: the hard disk
+Your Answer: 	the hard disk
+Time Spending: 	0.71 seconds
 Score: 		1.00 points
 Extra Score: 	5.00 points
 Total Score: 	6.00 points
 -------------------------------------------- 
 
-Question: Which format is being used when a date is written as March 28th, 2019?
-Correct Answer: American
-Your Answer: 	American
-Time Spending: 	0.28 seconds
+Question: What do we call a program for exploring the Web and viewing websites?
+Correct Answer: a browser
+Your Answer: 	a scanner
+Time Spending: 	1.47 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: To open a particular folder, file or app, you just have to click on its
+Correct Answer: icon
+Your Answer: 	icon
+Time Spending: 	2.31 seconds
+Score: 		1.00 points
+Extra Score: 	2.17 points
+Total Score: 	3.17 points
+-------------------------------------------- 
+
+Question: RAM, ROM and cache are different types of _______ that computers can use.
+Correct Answer: memory
+Your Answer: 	memory
+Time Spending: 	0.61 seconds
 Score: 		1.00 points
 Extra Score: 	5.00 points
 Total Score: 	6.00 points
 -------------------------------------------- 
 
-Question: Which is another way of saying six forty-five when telling the time?
-Correct Answer: a quarter to seven
-Your Answer: 	fifteen to seven
-Time Spending: 	0.25 seconds
+Question: Which allows wireless data communication?
+Correct Answer: a Bluetooth connection
+Your Answer: 	a Bluetooth connection
+Time Spending: 	0.69 seconds
+Score: 		1.00 points
+Extra Score: 	5.00 points
+Total Score: 	6.00 points
+-------------------------------------------- 
+
+Question: What do people go to public hotspots for?
+Correct Answer: Internet access
+Your Answer: 	free viruses
+Time Spending: 	0.50 seconds
 Score: 		0.00 points
 Extra Score: 	0.00 points
 Total Score: 	0.00 points
 -------------------------------------------- 
 
-Question: In British English, which comes first when writing the date?
-Correct Answer: the day
-Your Answer: 	the month
-Time Spending: 	0.30 seconds
+Question: A computer's _______ is called its heart or "brains" because it's where data is processed.
+Correct Answer: CPU
+Your Answer: 	RAM
+Time Spending: 	0.88 seconds
 Score: 		0.00 points
 Extra Score: 	0.00 points
 Total Score: 	0.00 points
 -------------------------------------------- 
 
-Question: "Genghis Khan died in 1227 AD." This means he died 1227 years
-Correct Answer: after Christ was born
-Your Answer: 	before Christ
-Time Spending: 	0.26 seconds
-Score: 		0.00 points
-Extra Score: 	0.00 points
-Total Score: 	0.00 points
--------------------------------------------- 
-
-SCORE: 	2.00 points of possible 10.00
-SCORE EXTRA: 	10.00 points
-TOTAL SCORE: 	12.00 points
+SCORE: 	5.00 points of possible 10.00
+SCORE EXTRA: 	17.17 points
+TOTAL SCORE: 	22.17 points
 ******************************************** 
 
