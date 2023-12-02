@@ -1,5 +1,6 @@
 # text file
 *.txt
+**/*.txt
 
 # MacOS
 .DS_Store

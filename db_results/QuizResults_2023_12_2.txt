@@ -1,109 +1,109 @@
 ******************************************** 
 
-RESULTS for Tok
-Date: 2023-12-02 15:10:31.854965
-QUESTIONS: 7 out of 10 correct
-SCORE: 7.00 points of possible 10.00
-SCORE EXTRA: 4.39 points
-TOTAL SCORE: 11.39 points
+RESULTS for l
+Date: 2023-12-02 15:24:20.191893
+QUESTIONS: 3 out of 10 correct
+SCORE: 3.00 points of possible 10.00
+SCORE EXTRA: 14.16 points
+TOTAL SCORE: 17.16 points
 ******************************************** 
 
 
 
 ************** Result Details ************** 
 
-Question: He arrived at exactly 11am, _____ on time.
-Correct Answer: right
-Your Answer: 	right
-Time Spending: 	8.50 seconds
+Question: The rain's nearly stopped. It's only _______ now.
+Correct Answer: drizzling
+Your Answer: 	drizzling
+Time Spending: 	1.20 seconds
 Score: 		1.00 points
-Extra Score: 	0.00 points
-Total Score: 	1.00 points
+Extra Score: 	4.16 points
+Total Score: 	5.16 points
 -------------------------------------------- 
 
-Question: What do you do in your _____ time?
-Correct Answer: free
-Your Answer: 	free
-Time Spending: 	3.70 seconds
-Score: 		1.00 points
-Extra Score: 	1.35 points
-Total Score: 	2.35 points
--------------------------------------------- 
-
-Question: We couldn't finish because we ________ time.
-Correct Answer: ran out of
-Your Answer: 	ran out of
-Time Spending: 	4.24 seconds
-Score: 		1.00 points
-Extra Score: 	1.18 points
-Total Score: 	2.18 points
--------------------------------------------- 
-
-Question: If we take this short cut we'll _____ some time.
-Correct Answer: save
-Your Answer: 	save
-Time Spending: 	6.64 seconds
-Score: 		1.00 points
-Extra Score: 	0.00 points
-Total Score: 	1.00 points
--------------------------------------------- 
-
-Question: We _____ time sitting in a traffic jam. We should've taken the train.
-Correct Answer: wasted
-Your Answer: 	wasted
-Time Spending: 	2.69 seconds
-Score: 		1.00 points
-Extra Score: 	1.86 points
-Total Score: 	2.86 points
--------------------------------------------- 
-
-Question: There have been several robberies in the _____ weeks.
-Correct Answer: past few
-Your Answer: 	past few
-Time Spending: 	7.12 seconds
-Score: 		1.00 points
-Extra Score: 	0.00 points
-Total Score: 	1.00 points
--------------------------------------------- 
-
-Question: The Internet was developed in the _____ century.
-Correct Answer: late 20th
-Your Answer: 	late 20th
-Time Spending: 	5.51 seconds
-Score: 		1.00 points
-Extra Score: 	0.00 points
-Total Score: 	1.00 points
--------------------------------------------- 
-
-Question: They're really busy. They work ________ dusk.
-Correct Answer: from dawn to
-Your Answer: 	from day to
-Time Spending: 	5.92 seconds
+Question: A _______ is a tropical storm with very strong winds.
+Correct Answer: hurricane
+Your Answer: 	precipitation
+Time Spending: 	0.28 seconds
 Score: 		0.00 points
 Extra Score: 	0.00 points
 Total Score: 	0.00 points
 -------------------------------------------- 
 
-Question: You'll forget all about it ________ by.
-Correct Answer: as time goes
-Your Answer: 	when time comes
-Time Spending: 	4.05 seconds
+Question: I stepped in a _______ and got the bottom of my pants all wet.
+Correct Answer: puddle
+Your Answer: 	puddle
+Time Spending: 	0.74 seconds
+Score: 		1.00 points
+Extra Score: 	5.00 points
+Total Score: 	6.00 points
+-------------------------------------------- 
+
+Question: We didn't use the airconditioner at all during that _______ last summer.
+Correct Answer: cold spell
+Your Answer: 	sunburn
+Time Spending: 	1.20 seconds
 Score: 		0.00 points
 Extra Score: 	0.00 points
 Total Score: 	0.00 points
 -------------------------------------------- 
 
-Question: Can you ________ to meet us this week?
-Correct Answer: make time
-Your Answer: 	do time
-Time Spending: 	5.85 seconds
+Question: You can get struck by _______ during an electrical storm.
+Correct Answer: lightning
+Your Answer: 	sunshine
+Time Spending: 	3.02 seconds
 Score: 		0.00 points
 Extra Score: 	0.00 points
 Total Score: 	0.00 points
 -------------------------------------------- 
 
-SCORE: 	7.00 points of possible 10.00
-SCORE EXTRA: 	4.39 points
-TOTAL SCORE: 	11.39 points
+Question: It was too _______ for the pilot to land the plane.
+Correct Answer: foggy
+Your Answer: 	mild
+Time Spending: 	1.98 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: If you let me put your _______ on I'll be able to see better.
+Correct Answer: shades
+Your Answer: 	shades
+Time Spending: 	0.55 seconds
+Score: 		1.00 points
+Extra Score: 	5.00 points
+Total Score: 	6.00 points
+-------------------------------------------- 
+
+Question: There's often a light _______ in the afternoon on this island.
+Correct Answer: shower
+Your Answer: 	heat stroke
+Time Spending: 	0.55 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: When I looked at the _______ it said it was ten degrees.
+Correct Answer: thermometer
+Your Answer: 	scorcher
+Time Spending: 	0.85 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+Question: Putting on _______ is supposed to prevent sunburn.
+Correct Answer: sunscreen
+Your Answer: 	suntan
+Time Spending: 	2.61 seconds
+Score: 		0.00 points
+Extra Score: 	0.00 points
+Total Score: 	0.00 points
+-------------------------------------------- 
+
+SCORE: 	3.00 points of possible 10.00
+SCORE EXTRA: 	14.16 points
+TOTAL SCORE: 	17.16 points
 ******************************************** 
 
