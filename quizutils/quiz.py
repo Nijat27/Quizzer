@@ -277,6 +277,7 @@ class QuestionMC(Question):
     The QuestionMC object (inherits from the Question object) 
     that stores the Multiple Choice question type. 
     This object is used when the program is waiting for the user's answer.  
+
     """
 
     def __init__(self):
