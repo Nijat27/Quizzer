@@ -18,7 +18,7 @@ This is the front end of the app where users interact with the system and manage
 ### File: main_menu.py
 ```class QuizApp```: is used to manage the Quiz Application user interface and flow.
 
-### Functions
+#### Functions
 1. `__init__`: Initializes the QuizApp.
 2. `run`: Starts the main application loop.
 3. `display_welcome_message`: Displays a welcome message.
@@ -39,10 +39,10 @@ This is the front end of the app where users interact with the system and manage
 -	Manages the flow of questions and answers during a quiz session
 -	Displays and save the results at the end of a quiz
 
-### File: quizmanager.py:
+#### File: quizmanager.py:
 ```class QuizManager```: is used to manages the quizzes, including listing, taking, and saving results of quizzes
 
-### Functions
+#### Functions
 1. `__init__`: Initializes the QuizManager.
 2. `_build_quiz_list`: Builds a list of quizzes from JSON files.
 3. `list_quizzes`: Lists all available quizzes.
@@ -56,10 +56,10 @@ This is the front end of the app where users interact with the system and manage
 -	Retrieve questions from databases such as JSON
 -	Parses quizzes
 
-### File: quizparser.py  
+#### File: quizparser.py  
 ```class JSONQuizParser```: is used for importing quiz data from JSON file. 
 
-### Functions:   
+#### Functions:   
 1. import_data(quizpath)  
 	The function takes the JSON file path and then opens/loads the data into a dictionary, which is the output of the function.
 2. create_question_obj(data)  
@@ -73,10 +73,10 @@ This is the front end of the app where users interact with the system and manage
 -	Keeps track of the participant’s score
 -	Times the quiz duration for each participant
 
-### File: quiz.py  
+#### File: quiz.py  
 ```class Quiz```: contains all information for the quiz session, including questions, answers, and points.  
 
-### Functions:  
+#### Functions:  
 1. print_header(idx)  
 	The function takes ```idx```, which is the number of the question, and prints the header of each question.
 2. print_results(quiztaker)  
