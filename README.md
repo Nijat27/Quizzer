@@ -15,6 +15,22 @@ This is the front end of the app where users interact with the system and manage
 -	Greets the user
 -	Displays the menu
 
+### File: main_menu.py
+```class QuizApp```: is used to manage the Quiz Application user interface and flow.
+
+### Functions
+1. `__init__`: Initializes the QuizApp.
+2. `run`: Starts the main application loop.
+3. `display_welcome_message`: Displays a welcome message.
+4. `ask_user_name`: Asks the user to input their name.
+5. `main_menu`: Displays the main menu and processes user input.
+6. `show_menu_options`: Shows the available menu options.
+7. `display_error_message`: Displays an error message for invalid selections.
+8. `exit_app`: Exits the application.
+9. `list_quizzes`: Lists all available quizzes.
+10. `take_quiz`: Handles the logic of taking a quiz.
+
+
 **Module2**: Flow control
 
 -	Displays a list of available quizzes
@@ -23,15 +39,27 @@ This is the front end of the app where users interact with the system and manage
 -	Manages the flow of questions and answers during a quiz session
 -	Displays and save the results at the end of a quiz
 
+### File: quizmanager.py:
+```class QuizManager```: is used to manages the quizzes, including listing, taking, and saving results of quizzes
+
+### Functions
+1. `__init__`: Initializes the QuizManager.
+2. `_build_quiz_list`: Builds a list of quizzes from JSON files.
+3. `list_quizzes`: Lists all available quizzes.
+4. `take_quiz`: Facilitates taking a quiz.
+5. `print_results`: Prints the results of the quiz.
+6. `save_results`: Saves the quiz results to a file.
+
 **Sub-package #2**: Creates quiz objects from databases gathered from free online sources and communicates with the sub-package #1.
 
 **Module1**: Parsing questions from databases to quiz objects
 -	Retrieve questions from databases such as JSON
 -	Parses quizzes
 
-File: quizparser.py  
-```class JSONQuizParser```: is used for importing quiz data from JSON file.   
-Functions:   
+### File: quizparser.py  
+```class JSONQuizParser```: is used for importing quiz data from JSON file. 
+
+### Functions:   
 1. import_data(quizpath)  
 	The function takes the JSON file path and then opens/loads the data into a dictionary, which is the output of the function.
 2. create_question_obj(data)  
@@ -45,9 +73,10 @@ Functions:
 -	Keeps track of the participant’s score
 -	Times the quiz duration for each participant
 
-File: quiz.py  
+### File: quiz.py  
 ```class Quiz```: contains all information for the quiz session, including questions, answers, and points.  
-Functions:  
+
+### Functions:  
 1. print_header(idx)  
 	The function takes ```idx```, which is the number of the question, and prints the header of each question.
 2. print_results(quiztaker)  
