@@ -6,16 +6,16 @@
 
 The Quizzer App is a software package designed to conduct quizzes. It comprises two sub-packages:
 
-**Sub-package #1**: User Interface/Quiz Manager
+## **Sub-package #1**: User Interface/Quiz Manager
 
 This is the front end of the app where users interact with the system and manage quizzes:
 
-**Module1**: User interface
+### **Module1**: User interface
 -	Handles main menu
 -	Greets the user
 -	Displays the menu
 
-### File: main_menu.py
+#### File: main_menu.py
 ```class QuizApp```: is used to manage the Quiz Application user interface and flow.
 
 #### Functions
@@ -31,7 +31,7 @@ This is the front end of the app where users interact with the system and manage
 10. `take_quiz`: Handles the logic of taking a quiz.
 
 
-**Module2**: Flow control
+### **Module2**: Flow control
 
 -	Displays a list of available quizzes
 -	Handles the selection process
@@ -50,9 +50,9 @@ This is the front end of the app where users interact with the system and manage
 5. `print_results`: Prints the results of the quiz.
 6. `save_results`: Saves the quiz results to a file.
 
-**Sub-package #2**: Creates quiz objects from databases gathered from free online sources and communicates with the sub-package #1.
+## **Sub-package #2**: Creates quiz objects from databases gathered from free online sources and communicates with the sub-package #1.
 
-**Module1**: Parsing questions from databases to quiz objects
+### **Module1**: Parsing questions from databases to quiz objects
 -	Retrieve questions from databases such as JSON
 -	Parses quizzes
 
@@ -67,7 +67,7 @@ This is the front end of the app where users interact with the system and manage
 3. parse_quiz(quizpath)  
 	The main function that calls others for extracting the quiz data from the JSON file and creates a quiz object.  
 
-**Module2**: Creates quiz objects
+### **Module2**: Creates quiz objects
 -	Defines quiz properties such as questions, answers
 -	Enables to take the quiz
 -	Keeps track of the participant’s score
