@@ -1,42 +1,47 @@
 import os
-path_cur = os.getcwd()
-path_db_quizzes = os.path.join(path_cur, 'db_quizzes')
-# print(path_db_quizzes)
-
 from quizuiflowcontrol.quizmanager import QuizManager
 
 class QuizApp:
     """
-    QuizApp class to manage the flow and control of the quiz application.
+    A class to manage the Quiz Application user interface and flow.
 
     Attributes:
-        user_name (str): Stores the name of the user.
-        quiz_manager (QuizManager): Manages various quiz-related operations.
+        user_name (str): Stores the user's name.
+        quiz_manager (QuizManager): Manages the quizzes including listing and taking quizzes.
     """
+
     def __init__(self):
-        """Initialize the QuizApp with an empty user name and a QuizManager instance."""
+        """
+        Initializes the QuizApp with an empty username and sets up the quiz manager.
+        """
         self.user_name = ""
-        self.quiz_manager = QuizManager(path_db_quizzes)  # Replace with the actual path
+        # Initialize QuizManager with the path to the quiz database
+        self.quiz_manager = QuizManager(os.path.join(os.getcwd(), 'db_quizzes'))
 
     def run(self):
-         """Start the main loop of the application."""
+        """
+        Starts the main loop of the application, handling the core workflow.
+        """
         self.display_welcome_message()
         self.ask_user_name()
         self.main_menu()
 
     def display_welcome_message(self):
-        """Display a welcome message to the user."""
+        """
+        Displays a welcome message at the beginning of the application.
+        """
         print("Welcome to the Quiz App")
 
     def ask_user_name(self):
-        """Ask the user to input their name and store it."""
+        """
+        Prompts the user to enter their name and stores it.
+        """
         self.user_name = input("What is your name? ")
         print(f"Welcome, {self.user_name}!\n")
 
     def main_menu(self):
         """
-        Display the main menu and process user input for navigation.
-        The menu allows the user to list quizzes, take a quiz, or exit the app.
+        Handles the main menu, allowing the user to choose different actions.
         """
         while True:
             self.show_menu_options()
@@ -46,41 +51,46 @@ class QuizApp:
                 self.display_error_message()
                 continue
 
-            user_choice = user_choice.upper()
-
-            if user_choice == 'E':
+            if user_choice.upper() == 'E':
                 self.exit_app()
                 break
-            elif user_choice == 'L':
+            elif user_choice.upper() == 'L':
                 self.list_quizzes()
-            elif user_choice == 'T':
+            elif user_choice.upper() == 'T':
                 self.take_quiz()
             else:
                 self.display_error_message()
 
     def show_menu_options(self):
-        """Show menu options."""
+        """
+        Displays the available menu options.
+        """
         print("Please make a selection")
         print("(L): List quizzes")
         print("(T): Take a quiz")
         print("(E): Exit the App")
 
     def display_error_message(self):
-        """Display an error message for invalid selections."""
+        """
+        Displays an error message for invalid menu selections.
+        """
         print("Not a valid selection. Try again!")
 
     def exit_app(self):
-        """Exit the application with a goodbye."""
+        """
+        Closes the application with a goodbye message.
+        """
         print("Exiting the Quiz App. Goodbye!")
 
     def list_quizzes(self):
-        """List all available quizzes."""
+        """
+        Lists all the available quizzes using the QuizManager.
+        """
         self.quiz_manager.list_quizzes()
 
     def take_quiz(self):
         """
-        Hande the logic of taking a quiz.
-        Prompts the user for a quiz number, validates it and proceeds to quiz taking.
+        Facilitates the process of taking a quiz.
         """
         try:
             quiz_number = int(input("Enter the quiz number: "))
@@ -95,6 +105,7 @@ class QuizApp:
         except ValueError:
             self.display_error_message()
 
+# Uncomment the below lines to run the Quiz App
 # if __name__ == "__main__":
 #     quiz_app = QuizApp()
 #     quiz_app.run()
