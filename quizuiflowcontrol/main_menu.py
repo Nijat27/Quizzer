@@ -6,6 +6,13 @@ path_db_quizzes = os.path.join(path_cur, 'db_quizzes')
 from quizuiflowcontrol.quizmanager import QuizManager
 
 class QuizApp:
+    """
+    QuizApp class to manage the flow and control of the quiz application.
+
+    Attributes:
+        user_name (str): Stores the name of the user.
+        quiz_manager (QuizManager): Manages various quiz-related operations.
+    """
     def __init__(self):
         """Initialize the QuizApp with an empty user name and a QuizManager instance."""
         self.user_name = ""
@@ -27,7 +34,10 @@ class QuizApp:
         print(f"Welcome, {self.user_name}!\n")
 
     def main_menu(self):
-        """ Display the menu and handle user selections."""
+        """
+        Display the main menu and process user input for navigation.
+        The menu allows the user to list quizzes, take a quiz, or exit the app.
+        """
         while True:
             self.show_menu_options()
             user_choice = input("Your selection? ")
@@ -60,7 +70,7 @@ class QuizApp:
         print("Not a valid selection. Try again!")
 
     def exit_app(self):
-        """Exit the application."""
+        """Exit the application with a goodbye."""
         print("Exiting the Quiz App. Goodbye!")
 
     def list_quizzes(self):
@@ -68,7 +78,10 @@ class QuizApp:
         self.quiz_manager.list_quizzes()
 
     def take_quiz(self):
-        """Hande the logic of taking a quiz."""
+        """
+        Hande the logic of taking a quiz.
+        Prompts the user for a quiz number, validates it and proceeds to quiz taking.
+        """
         try:
             quiz_number = int(input("Enter the quiz number: "))
             if quiz_number in self.quiz_manager.quizzes:
