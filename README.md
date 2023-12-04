@@ -1,7 +1,3 @@
-# Student names:
-* 1)	Kulaphong Jitareerat, 67761544
-* 2)	Nijiati Abulizi, 59764100
-
 # Quizzer App
 
 The Quizzer App is a software package designed to conduct quizzes. It comprises two sub-packages:
@@ -93,3 +89,7 @@ Functions:
 
 
 Overall, the package is a cohesive system for conducting quizzes efficiently, tracking performance, and managing quiz content.
+
+# Student names:
+* 1)	Kulaphong Jitareerat, 67761544
+* 2)	Nijiati Abulizi, 59764100
