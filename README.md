@@ -87,7 +87,7 @@ Functions:
 
 ```class QuestionMC```: stores the Multiple Choice question type. This object is used when the program is waiting for the user's answer.   
 Functions:   
-1. ask: The function prints the Multiple Choice question information to the users and gets a response from them.  
+1. `ask`: The function prints the Multiple Choice question information to the users and gets a response from them.  
 
 ```class Answer```: stores the answers of each question.   
 
