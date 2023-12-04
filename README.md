@@ -61,7 +61,7 @@ This is the front end of the app where users interact with the system and manage
 
 #### Functions:   
 1. `import_data`: The function takes the JSON file path and then opens/loads the data into a dictionary, which is the output of the function.
-2. `create_question_obj`: The function takes the quiz data dictionary (output of the function ```import_data(quizpath)```), and returns the question objects that contain information for use during the quiz session.
+2. `create_question_obj`: The function takes the quiz data dictionary (output of the function ```import_data```), and returns the question objects that contain information for use during the quiz session.
 3. `parse_quiz`: The main function that calls others for extracting the quiz data from the JSON file and creates a quiz object.  
 
 ### **Module2**: Creates quiz objects
