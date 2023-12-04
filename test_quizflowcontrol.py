@@ -1,8 +1,11 @@
-from quizmanager import QuizManager
+from quizuiflowcontrol.quizmanager import *
+from quizuiflowcontrol.main_menu import *
+from quizutils.quiz import *
+from quizutils.quiz import *
 
 def main():
     # Path to the directory where quizzes are stored
-    quiz_folder = '../db_quizzes'
+    quiz_folder = 'db_quizzes'
 
     # Initialize QuizManager
     quiz_manager = QuizManager(quiz_folder)
@@ -13,7 +16,7 @@ def main():
 
     # Simulate user selecting a quiz and taking it
     selected_quiz_id = 1  # Assuming user selects quiz with ID 1
-    username = "Nijat"
+    username = "Tester_name"
     print(f"\n{username} is taking Quiz ID {selected_quiz_id}")
     quiz_manager.take_quiz(selected_quiz_id, username)
 
