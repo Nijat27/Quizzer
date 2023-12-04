@@ -5,6 +5,9 @@ class QuizApp:
     """
     A class to manage the Quiz Application user interface and flow.
 
+    This class handles the interactions with the user, displays menu options, and
+    facilitates the taking and managing of quizzes through the QuizManager.
+
     Attributes:
         user_name (str): Stores the user's name.
         quiz_manager (QuizManager): Manages the quizzes including listing and taking quizzes.
@@ -13,14 +16,19 @@ class QuizApp:
     def __init__(self):
         """
         Initializes the QuizApp with an empty username and sets up the quiz manager.
+
+        The quiz manager is initialized with the path to the quiz database, which is
+        assumed to be in the 'db_quizzes' directory in the current working directory.
         """
         self.user_name = ""
-        # Initialize QuizManager with the path to the quiz database
         self.quiz_manager = QuizManager(os.path.join(os.getcwd(), 'db_quizzes'))
 
     def run(self):
         """
         Starts the main loop of the application, handling the core workflow.
+
+        This method is the entry point for the QuizApp. It displays the welcome message,
+        prompts the user for their name, and then enters the main menu loop.
         """
         self.display_welcome_message()
         self.ask_user_name()
@@ -35,6 +43,8 @@ class QuizApp:
     def ask_user_name(self):
         """
         Prompts the user to enter their name and stores it.
+
+        The name entered by the user is stored in the user_name attribute.
         """
         self.user_name = input("What is your name? ")
         print(f"Welcome, {self.user_name}!\n")
@@ -42,6 +52,9 @@ class QuizApp:
     def main_menu(self):
         """
         Handles the main menu, allowing the user to choose different actions.
+
+        The user can choose to list quizzes, take a quiz, or exit the app.
+        The loop continues until the user chooses to exit.
         """
         while True:
             self.show_menu_options()
@@ -63,7 +76,7 @@ class QuizApp:
 
     def show_menu_options(self):
         """
-        Displays the available menu options.
+        Displays the available menu options to the user.
         """
         print("Please make a selection")
         print("(L): List quizzes")
@@ -73,24 +86,36 @@ class QuizApp:
     def display_error_message(self):
         """
         Displays an error message for invalid menu selections.
+
+        This method is called when the user makes an invalid selection in the main menu.
         """
         print("Not a valid selection. Try again!")
 
     def exit_app(self):
         """
         Closes the application with a goodbye message.
+
+        This method prints a goodbye message and then exits the main menu loop,
+        effectively closing the application.
         """
         print("Exiting the Quiz App. Goodbye!")
 
     def list_quizzes(self):
         """
         Lists all the available quizzes using the QuizManager.
+
+        This method calls the list_quizzes method of the quiz_manager to display
+        all available quizzes to the user.
         """
         self.quiz_manager.list_quizzes()
 
     def take_quiz(self):
         """
         Facilitates the process of taking a quiz.
+
+        The user is prompted to enter the number of the quiz they wish to take.
+        The quiz is then administered by the QuizManager. If the quiz number is
+        invalid, an error message is displayed.
         """
         try:
             quiz_number = int(input("Enter the quiz number: "))
@@ -105,7 +130,13 @@ class QuizApp:
         except ValueError:
             self.display_error_message()
 
-# Uncomment the below lines to run the Quiz App
+# Example usage:
 # if __name__ == "__main__":
-#     quiz_app = QuizApp()
-#     quiz_app.run()
+#    app = QuizApp()
+#    app.run()
+
+
+# Uncomment the below lines to run the Quiz App
+if __name__ == "__main__":
+     quiz_app = QuizApp()
+     quiz_app.run()
