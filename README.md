@@ -60,12 +60,9 @@ This is the front end of the app where users interact with the system and manage
 ```class JSONQuizParser```: is used for importing quiz data from JSON file. 
 
 #### Functions:   
-1. import_data(quizpath)  
-	The function takes the JSON file path and then opens/loads the data into a dictionary, which is the output of the function.
-2. create_question_obj(data)  
-	The function takes the quiz data dictionary (output of the function ```import_data(quizpath)```), and returns the question objects that contain information for use during the quiz session.
-3. parse_quiz(quizpath)  
-	The main function that calls others for extracting the quiz data from the JSON file and creates a quiz object.  
+1. `import_data`: The function takes the JSON file path and then opens/loads the data into a dictionary, which is the output of the function.
+2. `create_question_obj`: The function takes the quiz data dictionary (output of the function ```import_data(quizpath)```), and returns the question objects that contain information for use during the quiz session.
+3. `parse_quiz`: The main function that calls others for extracting the quiz data from the JSON file and creates a quiz object.  
 
 ### **Module2**: Creates quiz objects
 -	Defines quiz properties such as questions, answers
@@ -77,26 +74,20 @@ This is the front end of the app where users interact with the system and manage
 ```class Quiz```: contains all information for the quiz session, including questions, answers, and points.  
 
 #### Functions:  
-1. print_header(idx)  
-	The function takes ```idx```, which is the number of the question, and prints the header of each question.
-2. print_results(quiztaker)  
-	The function takes a quiz to visualize the user's name for printing the user results.  
-3. take_quiz()  
-	The function runs the quiz session after the user selects the quiz to take.
-4. cal_score()  
-	The function calculates the score of the quiz session. Calculating the score is divided into two parts: calculating the question's score and extra score, which is related to the user's time spending on each question. For the extra score, if the user answers correctly, they will get an extra 5 points for answering within 1 second. Otherwise, they will get the ratio of 5 over the time spent (in seconds). If they answer incorrectly, they will not get the extra score.
+1. `print_header`: The function takes ```idx```, which is the number of the question, and prints the header of each question.
+2. `print_results`: The function takes a quiz to visualize the user's name for printing the user results.  
+3. `take_quiz`: The function runs the quiz session after the user selects the quiz to take.
+4. `cal_score`: The function calculates the score of the quiz session. Calculating the score is divided into two parts: calculating the question's score and extra score, which is related to the user's time spending on each question. For the extra score, if the user answers correctly, they will get an extra 5 points for answering within 1 second. Otherwise, they will get the ratio of 5 over the time spent (in seconds). If they answer incorrectly, they will not get the extra score.
 
 ```class Question```: stores all the question information for running the quiz session.       
 
 ```class QuestionTF```: stores the True or False question type. This object is used when the program is waiting for the user's answer.  
 Functions:  
-1. ask()  
-	The function prints the True/False question information to the users and gets a response from them.
+1. `ask`: The function prints the True/False question information to the users and gets a response from them.
 
 ```class QuestionMC```: stores the Multiple Choice question type. This object is used when the program is waiting for the user's answer.   
 Functions:   
-1. ask()  
-	The function prints the Multiple Choice question information to the users and gets a response from them.  
+1. ask: The function prints the Multiple Choice question information to the users and gets a response from them.  
 
 ```class Answer```: stores the answers of each question.   
 
