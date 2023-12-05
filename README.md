@@ -53,7 +53,7 @@ This is the front end of the app where users interact with the system and manage
 -	Parses quizzes
 
 #### File: quizparser.py  
-```class JSONQuizParser```: is used for importing quiz data from JSON file. 
+```class JSONQuizParser```: is used for importing quiz data from JSON file.
 
 #### Functions:   
 1. `import_data`: The function takes the JSON file path and then opens/loads the data into a dictionary, which is the output of the function.
