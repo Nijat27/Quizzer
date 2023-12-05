@@ -2,7 +2,7 @@
 
 The Quizzer App is a software package designed to conduct quizzes. It comprises two sub-packages:
 
-## **Sub-package #1**: User Interface/Quiz Manager
+## **Sub-package #1**: User Interface/Quiz Manager (Folder Name: quizuiflowcontrol)
 
 This is the front end of the app where users interact with the system and manage quizzes:
 
@@ -46,7 +46,7 @@ This is the front end of the app where users interact with the system and manage
 5. `print_results`: Prints the results of the quiz.
 6. `save_results`: Saves the quiz results to a file.
 
-## **Sub-package #2**: Creates quiz objects from databases gathered from free online sources and communicates with the sub-package #1.
+## **Sub-package #2**: Creates quiz objects from databases gathered from free online sources and communicates with the sub-package #1. (Folder name: quizutils)
 
 ### **Module1**: Parsing questions from databases to quiz objects
 -	Retrieve questions from databases such as JSON
