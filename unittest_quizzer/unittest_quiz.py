@@ -5,7 +5,6 @@ from quizutils.quiz import Quiz, Question, QuestionMC, QuestionTF, Answer
 from quizutils.quizparser import JSONQuizParser
 
 
-
 class TestQuiz(unittest.TestCase):
     
     @classmethod
@@ -50,13 +49,6 @@ class TestQuiz(unittest.TestCase):
             for qidx, q in enumerate(quiz_obj.questions[:1]):
                 quiz_obj.print_header(qidx)
             
-#         self.quiz_obj.score = 0 
-#         self.quiz_obj.correct_count = 0 
-#         self.quiz_obj.time_start = time.time() 
-#         for idx, q in enumerate(self.quiz_obj.questions): 
-#             q.is_correct = False 
-#             self.print_header(idx) 
-            
             
     def test_print_results(self):
         pass
@@ -69,9 +61,6 @@ class TestQuiz(unittest.TestCase):
     
     
 unittest.main(argv=[''], verbosity=2, exit=False)
-
-
-# In[ ]:
 
 
 

@@ -6,10 +6,8 @@ from quizutils.quizparser import JSONQuizParser
 from quizutils.quiz import Question, Answer, QuestionMC, QuestionTF
 
 
-
 class TestQuizParser(unittest.TestCase):
 
-        
     @classmethod
     def setUpClass(cls):
         print('Starting test: TestQuizParser')
