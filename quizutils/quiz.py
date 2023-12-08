@@ -159,7 +159,7 @@ class Quiz:
             self.list_response.append(q_obj.log_response)  # user's answer
             self.list_qanswer.append(q_obj.correct_answer)  # question's answer
             self.list_qpoint.append(q_obj.points)  # get question's point
-
+        
         ## get time spending for each question in second unit
         for idx, _ in enumerate(self.list_time_at_response):
             if idx==0:

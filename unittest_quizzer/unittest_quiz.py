@@ -1,23 +1,9 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
-# cd ..
-
-
-# In[2]:
-
-
 import os
 import glob
+import time
 import unittest
 from quizutils.quiz import Quiz, Question, QuestionMC, QuestionTF, Answer
 from quizutils.quizparser import JSONQuizParser
-
-
-# In[25]:
 
 
 class TestQuiz(unittest.TestCase):
@@ -48,8 +34,23 @@ class TestQuiz(unittest.TestCase):
             self.quizzes[i + 1] = parser.parse_quiz(f)
         
         self.quiztaker = "TestName"
-#         self.the_quiz = self.quizzes[quizid]
-#         self.results = self.the_quiz.take_quiz()
+
+        self.quiz_obj = self.quizzes[1]
+        self.quiz_obj.time_start = time.time()
+        self.quiz_obj.list_time_at_response = []
+        self.quiz_obj.list_response = []
+        self.quiz_obj.list_qanswer = []
+        self.quiz_obj.list_qpoint = []
+        list_makeanw = ['MyAnswer', 'three', 'MyAnswer', 'MyAnswer', 'MyAnswer',
+                        'divided by', 'MyAnswer', 'equals', 'MyAnswer', 'MyAnswer',]
+        
+        for qidx, q in enumerate(self.quiz_obj.questions):
+            self.quiz_obj.questions[qidx].log_response = "MyAnswer"
+            self.quiz_obj.questions[qidx].log_time_at_res = time.time()
+            if qidx==9:
+                # generate 10 second of time spending for last answer
+                self.quiz_obj.questions[qidx].log_time_at_res = time.time()+10
+            self.quiz_obj.questions[qidx].log_response = list_makeanw[qidx]
         
         
     def tearDown(self):
@@ -57,69 +58,32 @@ class TestQuiz(unittest.TestCase):
         
         
     def test_print_header(self):
-        try:
-            no_min_quize = min(self.quizzes)
-            no_max_quize = max(self.quizzes)  # if want to test all quiz objects
-#             no_max_quize = 1
-            for idx in range(no_min_quize, no_max_quize+1):
-                quiz_obj = self.quizzes[idx]
+   
+        for qidx, q in enumerate(self.quiz_obj.questions[:1]):
+            self.quiz_obj.print_header(qidx)
 
-                for qidx, q in enumerate(quiz_obj.questions[:1]):
-                    quiz_obj.print_header(qidx)
-            
-        except Exception as ex:
-            print("Message:", ex)
-            raise 
-            
-            
-    def test_print_results(self):
-        try:
-            no_min_quize = min(self.quizzes)
-            no_max_quize = max(self.quizzes)  # if want to test all quiz objects
-#             no_max_quize = 1
-            for idx in range(no_min_quize, no_max_quize+1):
-                quiz_obj = self.quizzes[idx]
-                quiz_obj.correct_count = 1
-                quiz_obj.quiz_score = 1
-                quiz_obj.quiz_score_ext = 1
-                quiz_obj.quiz_score_final = 1
-                 
-                for qidx, q in enumerate(quiz_obj.questions):
-                    q.text = "Test"
-                    q.log_response = "MyAnswer"
-                    quiz_obj.list_time_used.append(1)
-                    quiz_obj.list_score.append(1)
-                    quiz_obj.list_score_ext.append(1)
-                    quiz_obj.list_score_final.append(1)
-
-                quiz_obj.print_results(self.quiztaker)
-                
-                self.assertEqual(len(quiz_obj.questions), 10)
-                self.assertEqual(len(quiz_obj.list_time_used), 10)
-                self.assertEqual(len(quiz_obj.list_score), 10)
-                self.assertEqual(len(quiz_obj.list_score_ext), 10)
-                self.assertEqual(len(quiz_obj.list_score_final), 10)
-
-        except Exception as ex:
-            print("Message:", ex)
-            raise 
+        self.assertEqual(len(self.quiz_obj.questions), 10)
             
 
     def test_cal_score(self):
-        pass
+      
+        self.quiz_obj.cal_score()
+
+        self.assertEqual(self.quiz_obj.quiz_score, 3.0)  # correct 3 questions
+        self.assertEqual(self.quiz_obj.quiz_score_ext, 15.0)  # get 15 extra score, 5 per correct question
+        self.assertEqual(self.quiz_obj.quiz_score_final, 18.0)  # total score
     
     
+    def test_print_results(self):
+
+        self.quiz_obj.cal_score()  # need calculate score first
+        self.quiz_obj.print_results(self.quiztaker)
+
+        self.assertEqual(len(self.quiz_obj.questions), 10)
+        self.assertEqual(len(self.quiz_obj.list_time_used), 10)
+        self.assertEqual(len(self.quiz_obj.list_score), 10)
+        self.assertEqual(len(self.quiz_obj.list_score_ext), 10)
+        self.assertEqual(len(self.quiz_obj.list_score_final), 10)
+
 unittest.main(argv=[''], verbosity=2, exit=False)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 

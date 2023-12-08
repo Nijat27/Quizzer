@@ -27,6 +27,7 @@ class TestQuizParser(unittest.TestCase):
 
         self.parser = JSONQuizParser()
     
+
     def tearDown(self):
         print("tearDown")
         
@@ -85,7 +86,4 @@ class TestQuizParser(unittest.TestCase):
             
     
 unittest.main(argv=[''], verbosity=2, exit=False)
-
-
-
 
