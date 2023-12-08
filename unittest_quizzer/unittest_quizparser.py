@@ -1,15 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
-# cd ..
-
-
-# In[2]:
-
-
 import os
 import glob
 
@@ -17,18 +5,6 @@ import unittest
 from quizutils.quizparser import JSONQuizParser
 from quizutils.quiz import Question, Answer, QuestionMC, QuestionTF
 
-
-# In[4]:
-
-
-# [8 marks] Each test class should have at least two test cases 
-# and each test case should contain at least four assertion statements.
-
-# [4 marks] Each test class should use the 
-# setup(), tearDown(), setUpClass(cls), and tearDownClass(cls) methods to initialize values appropriately.
-
-
-# In[12]:
 
 
 class TestQuizParser(unittest.TestCase):
@@ -50,7 +26,8 @@ class TestQuizParser(unittest.TestCase):
         self.jsonfile_path = path_json_filename
         pattern = os.path.join(self.jsonfile_path, '*.json')
         self.jsonfiles = glob.glob(pattern)
-    
+
+        self.parser = JSONQuizParser()
     
     def tearDown(self):
         print("tearDown")
@@ -59,9 +36,8 @@ class TestQuizParser(unittest.TestCase):
     def test_import_data(self):
         
         for idx, jsonfile in enumerate(self.jsonfiles):
-            parser = JSONQuizParser()
-            data = parser.import_data(jsonfile)
-#             print(jsonfile)
+            
+            data = self.parser.import_data(jsonfile)
             list_key = list(data.keys())
             list_key.sort()
             list_check_data = ['category', 'description', 'questions', 'quizname']
@@ -81,11 +57,10 @@ class TestQuizParser(unittest.TestCase):
     
     def test_create_question_obj(self):
         for idx, jsonfile in enumerate(self.jsonfiles):
-            parser = JSONQuizParser()
-            data = parser.import_data(jsonfile)
+            data = self.parser.import_data(jsonfile)
 
             for quest in data['questions']:
-                quest_obj = parser.create_question_obj(quest)
+                quest_obj = self.parser.create_question_obj(quest)
 
                 if quest['type']=="mc":
                     self.assertIsInstance(quest_obj, QuestionMC)
@@ -98,19 +73,18 @@ class TestQuizParser(unittest.TestCase):
                 self.assertIsNotNone(quest_obj.is_correct)
                 self.assertIsNone(quest_obj.log_response)
                 self.assertIsNone(quest_obj.log_time_at_res)
-   
+                
     
     def test_parse_quiz(self):
         for idx, jsonfile in enumerate(self.jsonfiles[:1]):
 
-            parser = JSONQuizParser()
-            quiz_obj = parser.parse_quiz(jsonfile)
+            quiz_obj = self.parser.parse_quiz(jsonfile)
             self.assertIsNotNone(quiz_obj.name)
             self.assertIsNotNone(quiz_obj.description)
+
             self.assertEqual(type(quiz_obj.total_points), int)
             self.assertGreater(len(quiz_obj.questions), 0)
-    
-    
+            
     
 unittest.main(argv=[''], verbosity=2, exit=False)
 
