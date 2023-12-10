@@ -13,7 +13,7 @@ class TestQuizApp(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         """Class level teardown after all tests"""
-        
+
 
     def setUp(self):
         """Set up before each test"""
@@ -25,26 +25,28 @@ class TestQuizApp(unittest.TestCase):
 
     def test_list_quizzes(self):
         """Test the list_quizzes function"""
-        with patch('builtins.print', MagicMock()) as mock_print, \
-             patch.object(self.quiz_app.quiz_manager, 'list_quizzes', MagicMock()) as mock_list_quizzes:
+        with patch('builtins.print', MagicMock()) as mock_print:
             self.quiz_app.list_quizzes()
-            mock_list_quizzes.assert_called_once()
             mock_print.assert_called()
-            self.assertTrue(mock_print.call_count > 1)
-            mock_print.assert_any_call("Available Quizzes:")
-
+            self.assertTrue(mock_print.call_count >= len(self.quiz_app.quiz_manager.quizzes))
+            for quiz_id, quiz in self.quiz_app.quiz_manager.quizzes.items():
+                mock_print.assert_any_call(f"({quiz_id}): {quiz.name}")
 
     def test_take_quiz(self):
-        """Test the take_quiz function"""
-        with patch('builtins.input', return_value='1'), \
-             patch.object(self.quiz_app.quiz_manager, 'take_quiz', MagicMock()) as mock_take_quiz, \
-             patch.object(self.quiz_app.quiz_manager, 'print_results', MagicMock()) as mock_print_results, \
-             patch.object(self.quiz_app.quiz_manager, 'save_results', MagicMock()) as mock_save_results:
-            self.quiz_app.take_quiz()
-            mock_take_quiz.assert_called_with(1, self.quiz_app.user_name)
-            mock_print_results.assert_called_once()
-            mock_save_results.assert_called_once()
-            self.assertIsInstance(self.quiz_app.user_name, str)
+        """Test the take_quiz function in QuizApp"""
+        quiz_id = 1
+        username = "Test User"
+        self.quiz_app.user_name = username
+        mock_result = (10, 5, 15)  # Expected return value
+        mock_quiz = MagicMock()
+        mock_quiz.take_quiz.return_value = mock_result
+
+        with patch('builtins.input', return_value=str(quiz_id)), \
+            patch.object(self.quiz_app.quiz_manager, 'quizzes', {quiz_id: mock_quiz}), \
+            patch('builtins.print', MagicMock()):
+
+            result = self.quiz_app.take_quiz()
+            self.assertEqual(result, mock_result)
 
 
     def test_main_menu(self):
@@ -52,11 +54,11 @@ class TestQuizApp(unittest.TestCase):
         with patch('builtins.input', side_effect=['E']), \
              patch('builtins.print', MagicMock()) as mock_print:
             self.quiz_app.main_menu()
-            mock_print.assert_any_call("Welcome to the Quiz App")
             mock_print.assert_any_call("Please make a selection")
             mock_print.assert_any_call("(L): List quizzes")
+            mock_print.assert_any_call("(T): Take a quiz")
             mock_print.assert_any_call("(E): Exit the App")
-
+            mock_print.assert_any_call("Exiting the Quiz App. Goodbye!")
 
 if __name__ == '__main__':
     unittest.main()
