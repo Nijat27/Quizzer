@@ -4,6 +4,8 @@ from unittest_quizzer.unittest_quizparser import TestQuizParser
 
 
 def test_suite():
+    """Test suite contains all unittests from all modules.
+    """
     suite = unittest.TestSuite()
     result = unittest.TestResult()
     suite.addTest(TestQuizParser('test_import_data'))
@@ -12,7 +14,7 @@ def test_suite():
 
     suite.addTest(TestQuiz('test_print_header'))
     suite.addTest(TestQuiz('test_print_results'))
-    # suite.addTest(TestQuiz('test_take_quiz'))
+    # suite.addTest(TestQuiz('test_take_quiz'))  # take_quiz is required user input.
     suite.addTest(TestQuiz('test_cal_score'))
     
     runner = unittest.TextTestRunner()

@@ -7,33 +7,36 @@ from quizutils.quiz import Question, Answer, QuestionMC, QuestionTF
 
 
 class TestQuizParser(unittest.TestCase):
+    """
+    The unittest object contain unittests of functions in the quizparser.py file.
+    """
 
     @classmethod
     def setUpClass(cls):
-        print('Starting test: TestQuizParser')
-
+        # set a path of a JSON file
+        path_json_filename = os.path.join(os.getcwd(), 'db_quizzes')
+        jsonfile_path = path_json_filename
+        pattern = os.path.join(jsonfile_path, '*.json')
+        cls.jsonfiles = glob.glob(pattern)
     
     @classmethod
     def tearDownClass(cls):
-        print('Finished test: TestQuizParser')
-    
+        # clean a path of a JSON file
+        cls.jsonfiles = None
     
     def setUp(self):
-        print("setUp")
-        path_json_filename = os.path.join(os.getcwd(), 'db_quizzes')
-        self.jsonfile_path = path_json_filename
-        pattern = os.path.join(self.jsonfile_path, '*.json')
-        self.jsonfiles = glob.glob(pattern)
-
+        # initiate parser object
         self.parser = JSONQuizParser()
     
 
     def tearDown(self):
-        print("tearDown")
-        
+        # clean parser object
+        self.parser = None
+
     
     def test_import_data(self):
-        
+        """Test the import_data function.
+        """
         for idx, jsonfile in enumerate(self.jsonfiles):
             
             data = self.parser.import_data(jsonfile)
@@ -55,6 +58,8 @@ class TestQuizParser(unittest.TestCase):
                 
     
     def test_create_question_obj(self):
+        """Test the create_question_obj function.
+        """
         for idx, jsonfile in enumerate(self.jsonfiles):
             data = self.parser.import_data(jsonfile)
 
@@ -75,6 +80,8 @@ class TestQuizParser(unittest.TestCase):
                 
     
     def test_parse_quiz(self):
+        """Test the parse_quiz function.
+        """
         for idx, jsonfile in enumerate(self.jsonfiles[:1]):
 
             quiz_obj = self.parser.parse_quiz(jsonfile)
