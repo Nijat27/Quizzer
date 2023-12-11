@@ -135,6 +135,12 @@ The main menu offers the following options:
 
 ## Troubleshooting
 
+To test the Quizzer app, you can run the following code:
+```bash
+python3 unittest_main.py
+```
+This test conducts unit tests each of the four modules. 
+
 If you encounter any issues:
 
 - Check that you are using a compatible Python version.
