@@ -138,11 +138,8 @@ The main menu offers the following options:
 If you encounter any issues:
 
 - Check that you are using a compatible Python version.
-<<<<<<< HEAD
 - Ensure the JSON files for quizzes are correctly formatted and located in the 'Quizzes' folder.
-=======
 - Ensure the JSON files for quizzes are correctly formatted and located in the 'db_quizzes' folder.
->>>>>>> d04c7ee4383b09752f4a10b03623dbb66e8a0b7d
 - Review any error messages in the console for guidance.
 
 ## Contributing
