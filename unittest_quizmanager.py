@@ -3,9 +3,17 @@ from unittest.mock import patch, MagicMock
 from quizuiflowcontrol.quizmanager import QuizManager
 
 class TestQuizManager(unittest.TestCase):
+    """
+    TestQuizManager is a test suite for testing the QuizManager class.
+    It covers various functionalities like building a quiz list, listing quizzes,
+    taking a quiz, and saving results.
+    """
 
     @classmethod
     def setUpClass(cls):
+        """
+        Set up class method to initialize mock quiz data used across different test cases.
+        """
         cls.mock_quiz_1 = {
             "quizname": "General Knowledge Quiz",
             "description": "A general knowledge quiz",
@@ -61,6 +69,9 @@ class TestQuizManager(unittest.TestCase):
 
     @patch('builtins.print')
     def test_list_quizzes(self, mock_print):
+        """
+        Test to ensure quizzes are listed correctly.
+        """
         # Assuming self.mock_quiz_1 and self.mock_quiz_2 have a 'quizname' attribute
         mock_quiz_1_obj = MagicMock()
         mock_quiz_1_obj.name = self.mock_quiz_1["quizname"]
@@ -78,6 +89,9 @@ class TestQuizManager(unittest.TestCase):
 
     @patch.object(QuizManager, '_build_quiz_list')
     def test_take_quiz(self, mock_build_quiz_list):
+        """
+        Test to ensure a quiz can be taken.
+        """
         mock_build_quiz_list.return_value = None
         mock_quiz = MagicMock()
         self.quiz_manager.quizzes = {1: mock_quiz}
@@ -87,6 +101,9 @@ class TestQuizManager(unittest.TestCase):
     @patch('os.path.exists', return_value=False)
     @patch('builtins.open', new_callable=unittest.mock.mock_open)
     def test_save_results(self, mock_open, mock_exists):
+        """
+        Test to ensure quiz results are saved correctly.
+        """
         mock_quiz = MagicMock()
         self.quiz_manager.quizzes = {1: mock_quiz}
         self.quiz_manager.the_quiz = mock_quiz
