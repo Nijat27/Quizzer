@@ -2,7 +2,7 @@
 
 The Quizzer App is a software package designed to conduct quizzes. It comprises two sub-packages:
 
-## **Sub-package #1**: User Interface/Quiz Manager
+## **Sub-package #1**: User Interface/Quiz Manager (Folder Name: quizuiflowcontrol)
 
 This is the front end of the app where users interact with the system and manage quizzes:
 
@@ -46,14 +46,14 @@ This is the front end of the app where users interact with the system and manage
 5. `print_results`: Prints the results of the quiz.
 6. `save_results`: Saves the quiz results to a file.
 
-## **Sub-package #2**: Creates quiz objects from databases gathered from free online sources and communicates with the sub-package #1.
+## **Sub-package #2**: Creates quiz objects from databases gathered from free online sources and communicates with the sub-package #1. (Folder name: quizutils)
 
 ### **Module1**: Parsing questions from databases to quiz objects
 -	Retrieve questions from databases such as JSON
 -	Parses quizzes
 
 #### File: quizparser.py  
-```class JSONQuizParser```: is used for importing quiz data from JSON file. 
+```class JSONQuizParser```: is used for importing quiz data from JSON file.
 
 #### Functions:   
 1. `import_data`: The function takes the JSON file path and then opens/loads the data into a dictionary, which is the output of the function.
@@ -89,6 +89,64 @@ Functions:
 
 
 Overall, the package is a cohesive system for conducting quizzes efficiently, tracking performance, and managing quiz content.
+
+# Getting Started
+
+## To start using the Quiz App, follow these steps:
+
+### Prerequisites
+
+- Ensure you have Python installed on your system. The application has been tested with Python 3.11.
+
+### Installation
+
+1. Clone or download the Quiz App repository to your local machine.
+2. Navigate to the app directory in your terminal or command prompt.
+
+### Running the App
+
+- Execute the application by running the following command:
+
+```bash
+python3 main.py
+```
+
+## Using the Quiz App
+
+Once the app is running, you will be greeted with a welcome message and prompted to enter your name.
+
+### Main Menu
+
+The main menu offers the following options:
+
+- **List Quizzes (L):** Displays a list of available quizzes.
+- **Take a Quiz (T):** Allows you to select and take a quiz.
+- **Exit the App (E):** Exits the application.
+
+### Taking a Quiz
+
+1. Select the option to take a quiz.
+2. Enter the quiz number you wish to attempt.
+3. Answer the questions as they appear.
+4. Upon completion, your results will be displayed.
+
+### Viewing Quiz Results
+
+- After completing a quiz, your results are displayed on the screen, showing your score and the number of correct answers.
+
+## Troubleshooting
+
+If you encounter any issues:
+
+- Check that you are using a compatible Python version.
+- Ensure the JSON files for quizzes are correctly formatted and located in the 'db_quizzes' folder.
+- Review any error messages in the console for guidance.
+
+## Contributing
+
+Contributions to the Quiz App are welcome. Please feel free to fork the repository, make changes, and submit pull requests.
+
+## License
 
 # Student names:
 * 1)	Kulaphong Jitareerat, 67761544
