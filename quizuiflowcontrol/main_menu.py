@@ -1,6 +1,10 @@
 import os
 from quizuiflowcontrol.quizmanager import QuizManager
 
+class InvalidQuizNumberError(Exception):
+    """Exception raised for invalid quiz number selection."""
+    pass
+
 class QuizApp:
     """
     A class to manage the Quiz Application user interface and flow.
@@ -40,14 +44,20 @@ class QuizApp:
         """
         print("Welcome to the Quiz App")
 
+
+
     def ask_user_name(self):
         """
         Prompts the user to enter their name and stores it.
 
         The name entered by the user is stored in the user_name attribute.
         """
-        self.user_name = input("What is your name? ")
-        print(f"Welcome, {self.user_name}!\n")
+        try:
+            self.user_name = input("What is your name? ")
+            print(f"Welcome, {self.user_name}!\n")
+        except KeyboardInterrupt:
+            print("\nInput cancelled by user.")
+            exit(0)
 
     def main_menu(self):
         """
@@ -57,22 +67,25 @@ class QuizApp:
         The loop continues until the user chooses to exit.
         """
         while True:
-            self.show_menu_options()
-            user_choice = input("Your selection? ")
+            try:
+                self.show_menu_options()
+                user_choice = input("Your selection? ")
 
-            if not user_choice:
-                self.display_error_message()
-                continue
+                if not user_choice:
+                    self.display_error_message()
+                    continue
 
-            if user_choice.upper() == 'E':
-                self.exit_app()
-                break
-            elif user_choice.upper() == 'L':
-                self.list_quizzes()
-            elif user_choice.upper() == 'T':
-                self.take_quiz()
-            else:
-                self.display_error_message()
+                if user_choice.upper() == 'E':
+                    self.exit_app()
+                    break
+                elif user_choice.upper() == 'L':
+                    self.list_quizzes()
+                elif user_choice.upper() == 'T':
+                    self.take_quiz()
+                else:
+                    self.display_error_message()
+            except Exception as e:
+                peint(f"An unexpected error occrured: {e}")
 
     def show_menu_options(self):
         """
@@ -115,20 +128,26 @@ class QuizApp:
 
         The user is prompted to enter the number of the quiz they wish to take.
         The quiz is then administered by the QuizManager. If the quiz number is
-        invalid, an error message is displayed.
+        invalid, a custom exception is raised. If the input is not a valid integer,
+        a ValueError is caught and an error message is displayed
         """
         try:
             quiz_number = int(input("Enter the quiz number: "))
-            if quiz_number in self.quiz_manager.quizzes:
-                print(f"You have selected quiz {quiz_number}")
-                results = self.quiz_manager.take_quiz(quiz_number, self.user_name)
-                print("Quiz completed. Here are your results:")
-                self.quiz_manager.print_results()
-                self.quiz_manager.save_results()
-            else:
-                print("Invalid quiz number.")
+            #if quiz_number in self.quiz_manager.quizzes:
+            if quiz_number not in self.quiz_manager.quizzes:
+                raise InvalidQuizNumberError("Invalid quiz number.")
+            print(f"You have selected quiz {quiz_number}")
+            results = self.quiz_manager.take_quiz(quiz_number, self.user_name)
+            print("Quiz completed. Here are your results:")
+            self.quiz_manager.print_results()
+            self.quiz_manager.save_results()
+
+        except InvalidQuizNumberError as e:
+            print(e)
+
         except ValueError:
             self.display_error_message()
+
 
 # Example usage:
 # if __name__ == "__main__":

@@ -2,6 +2,7 @@ import os
 import datetime
 import glob
 from quizutils.quizparser import JSONQuizParser
+from quizuiflowcontrol.main_menu import *
 
 class QuizManager:
     """
@@ -47,12 +48,15 @@ class QuizManager:
         This private method scans the specified folder for JSON files and
         parses them to create Quiz objects, which are stored in the quizzes dictionary.
         """
-        pattern = os.path.join(self.quizfolder, '*.json')
-        json_files = glob.glob(pattern)
+        try:
+            pattern = os.path.join(self.quizfolder, '*.json')
+            json_files = glob.glob(pattern)
 
-        for i, f in enumerate(json_files):
-            parser = JSONQuizParser()
-            self.quizzes[i + 1] = parser.parse_quiz(f)
+            for i, f in enumerate(json_files):
+                parser = JSONQuizParser()
+                self.quizzes[i + 1] = parser.parse_quiz(f)
+        except Exception as e:
+            print(f"Error parsing quiz files: {e}")
 
     def list_quizzes(self):
         """
@@ -78,6 +82,8 @@ class QuizManager:
         The method sets the current quiz based on the provided ID, records the user's name,
         and invokes the quiz taking process. It then returns the results of the quiz.
         """
+        if quizid not in self.quizzes:
+            raise InvalidQuizNumberError("Invalid quiz number.")
         self.quiztaker = username
         self.the_quiz = self.quizzes[quizid]
         self.results = self.the_quiz.take_quiz()
@@ -100,17 +106,20 @@ class QuizManager:
         and a sequence number to ensure uniqueness. The file is saved in the 'db_results'
         directory within the current working directory.
         """
-        today = datetime.datetime.now()
-        filename = f"QuizResults_{today.year}_{today.month}_{today.day}.txt"
-        n = 1
-        while os.path.exists(filename):
-            filename = f"QuizResults_{today.year}_{today.month}_{today.day}_{n}.txt"
-            n += 1
+        try:
+            today = datetime.datetime.now()
+            filename = f"QuizResults_{today.year}_{today.month}_{today.day}.txt"
+            n = 1
+            while os.path.exists(filename):
+                filename = f"QuizResults_{today.year}_{today.month}_{today.day}_{n}.txt"
+                n += 1
 
-        path_cur = os.getcwd()
-        path_result = os.path.join(path_cur, 'db_results', filename)
-        with open(path_result, "w") as f:
-            self.the_quiz.print_results(self.quiztaker, f)
+                path_cur = os.getcwd()
+                path_result = os.path.join(path_cur, 'db_results', filename)
+                with open(path_result, "w") as f:
+                    self.the_quiz.print_results(self.quiztaker, f)
+        except IOError as e:
+            print(f"Error saving quiz results: {e}")
 
 # Example usage:
 if __name__ == "__main__":
