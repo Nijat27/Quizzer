@@ -2,7 +2,7 @@ import os
 import datetime
 import glob
 from quizutils.quizparser import JSONQuizParser
-from quizuiflowcontrol.main_menu import *
+from quizuiflowcontrol.main_menu import InvalidQuizNumberError
 
 class QuizManager:
     """
