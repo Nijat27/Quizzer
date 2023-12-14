@@ -170,6 +170,9 @@ If you encounter any issues:
 - Ensure the JSON files for quizzes are correctly formatted and located in the 'db_quizzes' folder.
 - Review any error messages in the console for guidance.
 
+## Test Coverage
+![Test Coverage](https://github.com/Nijat27/Quizzer/tree/main/img/coverage_test.png "Test Coverage")
+
 ## Contributing
 
 Contributions to the Quiz App are welcome. Please feel free to fork the repository, make changes, and submit pull requests.
