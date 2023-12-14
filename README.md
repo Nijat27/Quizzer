@@ -106,6 +106,9 @@ There are two methods to install the Quiz App:
 
 ### Method 1: Using pip
 
+**Easy Guide to QuizzerApp: Install & Explore Key Features!**
+[![img/thumbnail.png](img/thumbnail.png)](https://youtu.be/BP4dj7hiOCI)
+
 You can install the Quiz App directly using pip by running the following command:
 
 ```bash
