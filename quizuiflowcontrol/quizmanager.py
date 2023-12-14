@@ -2,7 +2,10 @@ import os
 import datetime
 import glob
 from quizutils.quizparser import JSONQuizParser
-from quizuiflowcontrol.main_menu import InvalidQuizNumberError
+
+class InvalidQuizNumberError(Exception):
+    """Exception raised for invalid quiz number selection."""
+    pass
 
 class QuizManager:
     """
