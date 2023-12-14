@@ -84,18 +84,20 @@ class JSONQuizParser:
         new_quiz : Quiz object
             the quiz object that contains all question objects.
         """
+        try:
+            quiz_data = self.import_data(quizpath)
+        except Exception as error:
+            print("The program cannot load the quiz files", error)
+        else:
+            new_quiz = Quiz()
+            new_quiz.name = quiz_data['quizname']
+            new_quiz.description = quiz_data['description']
 
-        quiz_data = self.import_data(quizpath)
+            for q_data in quiz_data['questions']:
 
-        new_quiz = Quiz()
-        new_quiz.name = quiz_data['quizname']
-        new_quiz.description = quiz_data['description']
+                question = self.create_question_obj(q_data)
+                new_quiz.total_points += question.points
+                new_quiz.questions.append(question)
 
-        for q_data in quiz_data['questions']:
-
-            question = self.create_question_obj(q_data)
-            new_quiz.total_points += question.points
-            new_quiz.questions.append(question)
-
-        return new_quiz
+            return new_quiz
 

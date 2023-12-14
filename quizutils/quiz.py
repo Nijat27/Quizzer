@@ -245,15 +245,19 @@ class QuestionTF(Question):
 
             # check response
             ## no response
-            if len(response) == 0:
-                print("Sorry, that's not a valid response.")
-                print("Please try again.")
-                continue
+            try:
+                if len(response) == 0:
+                    raise InputNotValudError()
+            except InputNotValudError:
+                print("Sorry, that's not a valid response.\nPlease try again.")
+                continue              
 
             ## reponse must be t or f (accept upper and lower cases)
-            if response[0].lower() not in ["t", "f"]:
-                print('Sorry, The valid response should be "t/T" or "f/F"')
-                print("Please try again.")
+            try:
+                if response[0].lower() not in ["t", "f"]:
+                    raise InputNotValudError()
+            except InputNotValudError:  
+                print('Sorry, The valid response should be "t/T" or "f/F"\nPlease try again.')
                 continue
 
             # convert response to the answer text (True/False)
@@ -303,20 +307,24 @@ class QuestionMC(Question):
             try:
                 response_int = int(response)
             except:
-                print(f"Sorry, that's not a valid response. The response should be a number between 1 to {no_choices}.")
-                print("Please try again.")
+                print(f"Sorry, that's not a valid response. The response should be a number between 1 to {no_choices}.\nPlease try again.")
                 continue
 
             ## range answer number
-            if (response_int > no_choices)|(response_int<1):
-                print(f"Sorry, that's not a valid response. The response should be a number between 1 to {no_choices}.")
-                print("Please try again.")
-                continue 
+            try:
+                if (response_int > no_choices)|(response_int<1):
+                    raise InputNotValudError()
+                    
+            except InputNotValudError:
+                    print(f"Sorry, that's not a valid response. The response should be a number between 1 to {no_choices}.\nPlease try again.")
+                    continue 
 
             ## no reponse
-            if not response:
-                print("Sorry, that's not a valid response.")
-                print("Please try again.")
+            try:
+                if not response:
+                    raise InputNotValudError()
+            except InputNotValudError:
+                print("Sorry, that's not a valid response.\nPlease try again.")
                 continue
 
             # get text of answer from answer number
@@ -327,6 +335,10 @@ class QuestionMC(Question):
             self.log_response = response_txt
             self.log_time_at_res = time.time()
             break
+
+
+class InputNotValudError(Exception):
+    pass
 
 
 class Answer:
