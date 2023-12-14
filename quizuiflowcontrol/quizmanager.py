@@ -125,10 +125,10 @@ class QuizManager:
             print(f"Error saving quiz results: {e}")
 
 # Example usage:
-if __name__ == "__main__":
-    quiz_manager = QuizManager('path/to/quizfolder')
-    quiz_manager.list_quizzes()
-    selected_quiz_id = 1  # assuming the user selects quiz 1
-    quiz_manager.take_quiz(selected_quiz_id, 'Alice')
-    quiz_manager.print_results()
-    quiz_manager.save_results()
+#if __name__ == "__main__":
+    #quiz_manager = QuizManager('path/to/quizfolder')
+    #quiz_manager.list_quizzes()
+    #selected_quiz_id = 1  # assuming the user selects quiz 1
+    #quiz_manager.take_quiz(selected_quiz_id, 'Alice')
+    #quiz_manager.print_results()
+    #quiz_manager.save_results()

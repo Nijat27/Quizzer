@@ -156,6 +156,6 @@ class QuizApp:
 
 
 # Uncomment the below lines to run the Quiz App
-if __name__ == "__main__":
-     quiz_app = QuizApp()
-     quiz_app.run()
+#if __name__ == "__main__":
+     #quiz_app = QuizApp()
+     #quiz_app.run()
