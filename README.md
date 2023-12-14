@@ -1,5 +1,8 @@
 # Quizzer App
 
+## BuildStamp
+[![Build Status](https://app.travis-ci.com/Nijat27/Quizzer.svg?branch=main)](https://app.travis-ci.com/Nijat27/Quizzer)
+
 The Quizzer App is a software package designed to conduct quizzes. It comprises two sub-packages:
 
 ## **Sub-package #1**: User Interface/Quiz Manager (Folder Name: quizuiflowcontrol)
