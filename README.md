@@ -113,7 +113,7 @@ pip install quizzerapp
 After installing through pip, you can run the application as a Python module from any location in your terminal or command prompt:
 
 ```bash
-python -m quizzer
+python -m Quizzer
 ```
 
 ### Method 2: Cloning or Downloading the Repository
