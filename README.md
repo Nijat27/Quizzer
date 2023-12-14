@@ -171,7 +171,7 @@ If you encounter any issues:
 - Review any error messages in the console for guidance.
 
 ## Test Coverage
-![img/coverage_test.png](img/coverage_test.png)
+![img/coverage_test1.png](img/coverage_test1.png)
 
 ## Contributing
 
