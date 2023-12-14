@@ -171,7 +171,7 @@ If you encounter any issues:
 - Review any error messages in the console for guidance.
 
 ## Test Coverage
-![Test Coverage](https://github.com/Nijat27/Quizzer/tree/main/img/coverage_test.png "Test Coverage")
+![img/coverage_test.png](img/coverage_test.png)
 
 ## Contributing
 
