@@ -95,19 +95,38 @@ Overall, the package is a cohesive system for conducting quizzes efficiently, tr
 
 ### Prerequisites
 
-- Ensure you have Python installed on your system. The application has been tested with Python 3.11.
+- Ensure you have Python installed on your system. The application has been tested with Python 3.9 and higher.
 
-### Installation
+### Quiz App Installation and Usage Guide
+
+There are two methods to install the Quiz App:
+
+### Method 1: Using pip
+
+You can install the Quiz App directly using pip by running the following command:
+
+```bash
+pip install quizzerapp
+```
+#### Running the App
+
+After installing through pip, you can run the application as a Python module from any location in your terminal or command prompt:
+
+```bash
+python -m quizzer
+```
+
+### Method 2: Cloning or Downloading the Repository
 
 1. Clone or download the Quiz App repository to your local machine.
 2. Navigate to the app directory in your terminal or command prompt.
 
-### Running the App
+#### Running the App
 
 - Execute the application by running the following command:
 
 ```bash
-python3 main.py
+python main.py
 ```
 
 ## Using the Quiz App
@@ -139,7 +158,7 @@ To test the Quizzer app, you can run the following code:
 ```bash
 python3 unittest_main.py
 ```
-This test conducts unit tests each of the four modules. 
+This test conducts unit tests each of the four modules.
 
 If you encounter any issues:
 
